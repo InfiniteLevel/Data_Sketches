@@ -1,0 +1,13 @@
+goos: linux
+goarch: amd64
+pkg: github.com/bruhng/distributed-sketching/client
+cpu: AMD Ryzen 5 7640U w/ Radeon 760M Graphics      
+BenchmarkCountThroughput/MergeRate:_1-12         	      30	138312853647 ns/op
+BenchmarkCountThroughput/MergeRate:_10-12        	      30	16867193780 ns/op
+BenchmarkCountThroughput/MergeRate:_100-12       	      30	3794912483 ns/op
+BenchmarkCountThroughput/MergeRate:_1000-12      	      30	2361563152 ns/op
+BenchmarkCountThroughput/MergeRate:_10000-12     	      30	2103715258 ns/op
+BenchmarkCountThroughput/MergeRate:_100000-12    	      30	2069715611 ns/op
+BenchmarkCountThroughput/MergeRate:_1000000-12   	      30	2065476568 ns/op
+PASS
+ok  	github.com/bruhng/distributed-sketching/client	5237.694s

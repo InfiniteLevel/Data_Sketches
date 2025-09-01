@@ -1,0 +1,24 @@
+goos: linux
+goarch: amd64
+pkg: github.com/bruhng/distributed-sketching/client
+cpu: AMD Ryzen 5 7640U w/ Radeon 760M Graphics      
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 590338474 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 609474145 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 580127083 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 566084534 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 563725129 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 564126675 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 598091803 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 599344303 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 619915713 ns/op
+BenchmarkKllThroughput/MergeRate:_1000000-12         	       1	 555096744 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 500511113 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 512267740 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 555309644 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 549406661 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 577396847 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 507942372 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 514425984 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 494537960 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	       1	 510702381 ns/op
+BenchmarkKllThroughput/MergeRate:_100000-12          	

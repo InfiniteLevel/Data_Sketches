@@ -1,0 +1,15 @@
+[Unit]
+Description=Star server with systemd
+After=network.target
+
+[Service]
+ExecStart=./sketcher
+WorkingDirectory=./
+Restart=always
+RestartSec=1
+User=%u
+Group=%u
+Environment="PORT=8080" "ENV=production"
+StandardOutput=append:./logs/server.log
+StandardError=append:./logs/server-error.log
+LimitNOFILE=65535

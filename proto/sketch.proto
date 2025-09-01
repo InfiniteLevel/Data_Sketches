@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+option go_package = "github.com/bruhng/distributed-sketching/proto";
+
+
+package proto;
+
+service Sketcher {
+  // Merges a sketch into the main sketch
+  rpc MergeKll (KLLSketch) returns  (MergeReply) {}
+  rpc QueryKll (NumericValue) returns (QueryReturn) {} 
+  rpc ReverseQueryKll (ReverseQuery) returns (NumericValue) {}
+  rpc PlotKll (PlotRequest) returns (PlotKllReply) {}
+  rpc MergeCount (CountSketch) returns (MergeReply) {}
+  rpc QueryCount (NumericValue) returns (CountQueryReply) {}
+  rpc TestLatency (EmptyMessage) returns (EmptyMessage) {}
+  rpc BadKll (BadArray) returns (MergeReply) {}
+  rpc BadCount (BadArray) returns (MergeReply) {}
+  rpc RestartServer (RestartMessage) returns (EmptyMessage) {}
+}
+
+
+
+message CountSketch {
+  repeated IntRow rows = 1;
+  repeated uint32 seeds = 2;
+  string type = 3;
+}
+
+message IntRow {
+  repeated int64 val = 1;
+}
+
+message CountQueryReply {
+  int64 res = 1;
+}
+
+
+message KLLSketch {
+  repeated NumericRow rows = 1;
+  int64 n = 2;
+  string type = 3;
+}
+
+message BadArray {
+  NumericRow arr = 1;
+  string type = 2;
+}
+
+message NumericRow {
+  repeated NumericValue values = 1;
+}
+
+message NumericValue {
+  oneof value {
+    int64 int_val = 1;
+    double float_val = 2;
+  }
+  string type = 3;
+}
+
+message ReverseQuery {
+  double phi = 1;
+  string type = 2;
+}
+
+message QueryReturn {
+  int64 phi = 1;
+  int64 N = 2;
+}
+
+message MergeReply {
+  int64 status = 1;  
+}
+
+message PlotRequest {
+  int64 numBins = 1;
+  string type = 2;
+}
+
+message PlotKllReply  {
+  double step = 1;
+  repeated double pmf = 2;
+}
+
+message EmptyMessage {}
+
+message RestartMessage {
+  int64 numMsg = 1;
+}

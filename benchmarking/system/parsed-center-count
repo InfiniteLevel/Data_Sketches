@@ -1,0 +1,738 @@
+panic: 
+float64goos: 
+goarch: 
+pkg: 
+                                                                                     │ center-count  │
+                                                                                     │    sec/op     │
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4      519.3m ± 1%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4       467.8m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4       424.7m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       383.7m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       357.4m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4       323.1m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4       285.7m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       257.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       243.3m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       224.9m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4       211.5m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       209.4m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4       209.4m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4       202.5m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4       223.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4       168.1m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4       175.8m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4       141.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4       147.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4       102.4m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4       106.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4       95.77m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4        110.2m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4        129.9m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4        87.38m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4        90.71m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4        115.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4        107.4m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        129.7m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4        82.57m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4        85.99m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4        97.94m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        84.17m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        88.61m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4        84.26m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4        81.48m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4        81.66m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4        86.60m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4        101.2m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        88.22m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4        119.5m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4        109.1m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4        104.0m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4        78.85m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4         88.26m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         96.06m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4         86.02m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4         99.69m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4         99.93m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         82.50m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         79.65m ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4     5.143 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4      4.655 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4      4.195 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4      3.794 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4      3.429 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4      3.111 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4      2.803 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4      2.547 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4      2.323 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4      2.166 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4      2.144 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4      2.111 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4      2.090 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4      2.014 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4      1.910 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4      1.904 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4      1.904 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4      1.799 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4      1.625 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4      1.820 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4      1.879 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4      1.841 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4       1.899 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4       1.797 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4       1.772 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4       1.851 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4       1.784 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4       1.816 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4       1.824 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4       1.755 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4       1.806 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4       1.857 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4       1.810 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4       1.878 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4       1.829 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4       1.800 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4       1.791 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4       1.832 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4       1.887 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4       1.838 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4       1.845 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4       1.906 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4       1.869 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4       1.872 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4        1.894 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4        1.870 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4        1.860 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4        1.897 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4        1.853 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4        1.866 ±  ∞ ¹
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4        1.862 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4     769.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4      908.2m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4      959.2m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       1.219 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4      725.7m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4      752.0m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4      684.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       1.386 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       1.045 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4      743.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4      710.8m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4      669.7m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4      696.9m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4      694.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4      829.7m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4      845.9m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4      846.2m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4      691.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4      698.3m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4      843.2m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4      646.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4      767.7m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4       646.3m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4       681.5m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4       831.5m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4       704.0m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4       702.4m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4       669.8m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4       753.8m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4       640.0m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4       719.8m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4       740.0m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        1.034 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4       707.9m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4       659.4m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4       709.7m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4       650.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4       663.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4       727.5m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4       648.3m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4       913.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4       658.0m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4       882.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4       667.6m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4        879.8m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4        730.9m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4        726.5m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4        654.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4        684.1m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         1.184 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4        690.9m ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4    17.19 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4     17.36 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4     16.27 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4     16.72 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4     17.06 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4     17.57 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4     16.59 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4     17.20 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4     17.37 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4     16.97 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4     16.72 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4     17.83 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4     16.58 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4     19.39 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4     16.52 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4     17.13 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4     17.20 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4     17.04 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4     17.81 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4     12.42 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4     16.95 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4     17.56 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4      12.61 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4      17.14 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4      17.86 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4      11.69 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4      17.11 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4      17.03 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4      17.48 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4      17.14 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4      17.70 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4      17.54 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4      17.00 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4      17.38 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4      17.30 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4      17.36 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4      17.55 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4      17.53 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4      16.80 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4      17.03 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4      17.31 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4      13.78 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4      17.61 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4      17.71 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4       17.56 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4       17.17 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4       17.16 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4       17.39 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4       15.50 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4       17.05 ±  ∞ ¹
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4       17.04 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4      9.663 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4       9.623 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4       9.570 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       9.468 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       9.330 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4       9.561 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4       9.086 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       9.035 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       9.041 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       9.734 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4       3.396 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       9.524 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4       9.582 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4       6.303 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4       9.579 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4       9.586 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4       9.579 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4       4.757 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4       9.571 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4       9.482 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4       5.425 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4       9.509 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4        9.531 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4        5.553 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4        9.669 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4        9.568 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4        9.453 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4        9.579 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        4.844 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4        9.618 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4        9.612 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4        4.784 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        9.643 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        4.479 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4        9.559 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4        4.955 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4        9.528 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4        9.382 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4        9.639 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        9.320 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4        6.520 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4        9.591 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4        9.610 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4        4.535 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4         9.552 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         9.593 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4         4.886 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4         8.826 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4         7.386 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         9.606 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         9.625 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4    68.53 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4     77.72 ±  ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4     74.50 ±  ∞ ¹
+geomean                                                                                 2.057
+¹ need >= 6 samples for confidence interval at level 0.95
+
+panic: could not turn of server
+float64goos: linux
+goarch: arm64
+pkg: github.com/bruhng/distributed-sketching/client
+                                                                                     │  center-count   │
+                                                                                     │     sec/op      │
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4      518.6m ±   1%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4       470.2m ±   1%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4       423.5m ±   0%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       383.4m ±   0%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       349.3m ±   2%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4       315.3m ±   2%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4       285.5m ±   3%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       259.0m ±   2%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       237.8m ±   4%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       225.2m ±   5%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4       201.0m ±   6%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       200.1m ±  13%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4       205.8m ±   9%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4       193.5m ±  12%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4       217.8m ±  16%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4       159.5m ±  16%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4       177.8m ±  10%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4       148.2m ±  39%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4       133.6m ±  11%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4       126.0m ±  39%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4       125.5m ±  33%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4       107.4m ±  18%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4        100.3m ±  60%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4        125.6m ±  50%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4        103.2m ±  19%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4        87.65m ±  42%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4        116.3m ±  33%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4        118.8m ±  34%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        108.2m ±  27%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4        101.4m ±  17%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4        91.21m ±  32%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4        96.78m ±  33%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        97.42m ±  19%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        103.8m ±  25%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4        102.5m ±  26%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4        102.2m ±  26%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4        109.0m ±  40%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4        97.31m ±  19%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4        85.40m ±  11%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        96.29m ±  14%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4        99.91m ±  22%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4        108.3m ±  58%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4        103.7m ±  27%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4        104.8m ±  19%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4         89.46m ±  32%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         95.74m ±  58%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4         92.45m ±  40%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4         105.3m ±  29%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4         104.1m ±  31%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         95.31m ±  55%
+SystemBadCount/Clients:_10,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         92.22m ±  65%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4     5.147 ±   1%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4      4.652 ±   0%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4      4.221 ±   1%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4      3.798 ±   1%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4      3.453 ±   1%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4      3.102 ±   0%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4      2.813 ±   3%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4      2.552 ±   1%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4      2.301 ±   0%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4      2.195 ±   3%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4      2.160 ±   2%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4      2.107 ±   2%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4      2.059 ±   2%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4      1.987 ±   4%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4      1.873 ±   4%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4      1.859 ±  14%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4      1.809 ±  11%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4      1.938 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4      1.855 ±   6%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4      1.825 ±   8%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4      1.853 ±  15%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4      1.736 ±  10%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4       1.805 ±  13%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4       1.826 ±   8%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4       1.825 ±  20%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4       1.816 ±  19%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4       1.803 ±  12%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4       1.797 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4       1.812 ±  11%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4       1.830 ±   3%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4       1.847 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4       1.826 ±  18%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4       1.836 ±   2%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4       1.808 ±  24%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4       1.824 ±   2%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4       1.847 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4       1.843 ±   9%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4       1.811 ±   8%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4       1.832 ±  17%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4       1.837 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4       1.839 ±   3%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4       1.866 ±  30%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4       1.858 ±  29%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4       1.856 ±  24%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4        1.795 ±  20%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4        1.859 ±   6%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4        1.858 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4        1.869 ±  26%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4        1.879 ±   5%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4        1.864 ±  26%
+SystemBadCount/Clients:_10,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4        1.873 ±  24%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4     782.6m ±  86%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4      721.7m ±  62%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4      752.4m ±  54%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       1.141 ±  58%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       1.061 ±  38%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4      705.6m ±  38%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4      826.7m ±  46%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       1.593 ±  31%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4      693.4m ±  88%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       1.226 ±  31%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4      673.8m ±  48%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       1.065 ±  39%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4      709.5m ±  72%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4      776.2m ±  28%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4      690.1m ±  43%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4      857.9m ±  24%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4      666.6m ±  80%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4      713.2m ± 126%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4      917.1m ±  50%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4      685.7m ±  55%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4      663.8m ±  88%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4      688.9m ±  86%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4       667.6m ±  58%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4       697.6m ±  52%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4       729.5m ±  64%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4       656.4m ±  35%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4       667.0m ±  81%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4       742.5m ±  25%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        1.082 ±  42%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4       664.6m ±  80%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4       671.5m ±  72%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4       691.3m ±  75%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4       707.1m ±  39%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        1.228 ±  46%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4       683.4m ±  38%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4       714.9m ±  41%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4       658.6m ±  51%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4       684.8m ±  67%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4       711.2m ±  80%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        1.043 ±  35%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4       700.0m ±  74%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4       660.5m ±  37%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4       661.1m ±  50%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4       658.1m ±  14%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4        702.3m ± 162%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         1.229 ±  32%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4        775.2m ±  37%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4        716.0m ±  55%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4        731.0m ±  58%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4        721.9m ±  81%
+SystemBadCount/Clients:_100,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         1.136 ±  39%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4    17.51 ±  11%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4     16.74 ±  13%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4     16.95 ±  17%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4     16.58 ±  15%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4     16.05 ±   8%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4     11.77 ±  40%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4     16.73 ±   5%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4     16.99 ±  25%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4     17.09 ±  24%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4     15.21 ±  29%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4     16.93 ±  14%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4     17.31 ±  20%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4     17.23 ±   4%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4     17.75 ±  26%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4     16.79 ±  17%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4     16.73 ±  23%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4     17.55 ±  10%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4     16.93 ±  30%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4     17.27 ±  12%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4     14.79 ±  28%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4     17.78 ±   5%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4     17.76 ±  15%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4      16.71 ±  39%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4      17.08 ±  12%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4      17.86 ±  10%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4      15.52 ±  36%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4      17.26 ±  13%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4      17.20 ±   7%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4      17.04 ±  14%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4      17.53 ±   8%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4      17.32 ±   4%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4      17.21 ±   3%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4      17.17 ±   4%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4      17.35 ±   7%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4      17.19 ±  25%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4      17.61 ±   8%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4      17.29 ±  14%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4      17.45 ±   7%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4      17.26 ±   6%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4      17.08 ±   4%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4      16.90 ±  18%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4      16.89 ±  22%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4      16.99 ±   4%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4      17.28 ±   7%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4       17.16 ±   6%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4       17.11 ±  13%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4       17.01 ±  37%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4       17.63 ±  22%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4       16.72 ±  35%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4       17.48 ±  11%
+SystemBadCount/Clients:_100,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4       17.44 ±   5%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4      9.627 ±  14%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4       9.583 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4       9.581 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       9.454 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       9.457 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4       9.558 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4       9.318 ±  13%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       7.596 ±  58%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       7.740 ±  45%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       9.603 ±  11%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4       4.626 ±  78%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       9.489 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4       9.605 ±  15%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4       7.821 ±  58%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4       9.541 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4       9.509 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4       9.476 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4       7.476 ±  41%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4       9.482 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4       9.380 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4       8.603 ±  55%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4       9.429 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4        9.504 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4        8.736 ±  40%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4        9.578 ±  14%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4        9.438 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4        9.423 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4        9.427 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        7.637 ±  53%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4        9.532 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4        9.434 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4        8.137 ±  22%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        9.494 ±  12%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        8.052 ±  60%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4        9.488 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4        5.723 ±  60%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4        9.525 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4        8.965 ±  10%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4        9.527 ±  11%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        9.397 ±   9%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4        6.548 ±  43%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4        9.463 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4        9.479 ±   1%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4        5.609 ±  65%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4         9.480 ±   2%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         9.381 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4         6.622 ±  40%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4         7.644 ±  57%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4         9.373 ±  32%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         9.259 ±  15%
+SystemBadCount/Clients:_500,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         9.556 ±   3%
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4    73.57 ±    ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4     78.78 ±    ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4     98.82 ±    ∞ ¹
+SystemBadCount/Clients:_500,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4     96.09 ±    ∞ ¹
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4       506.7m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4        455.6m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4        410.7m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4        370.9m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4        334.3m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4        301.0m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4        271.8m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4        244.9m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4        220.7m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4        199.7m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4        180.2m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4        162.5m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4        147.9m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4        133.4m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4        120.5m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4        108.2m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4        99.15m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4        88.97m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4        79.98m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4        72.81m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4        66.94m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4        60.37m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4         54.81m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4         50.20m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4         44.81m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4         41.90m ±   3%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4         38.82m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4         34.45m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4         31.93m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4         28.69m ±   3%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4         28.13m ±   6%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4         26.21m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4         24.09m ±  10%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4         24.45m ±   4%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4         23.72m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4         22.76m ±   8%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4         23.43m ±   4%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4         22.15m ±   3%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4         19.49m ±  13%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4         19.12m ±   6%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4         19.80m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4         19.69m ±  15%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4         19.13m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4         20.16m ±  13%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4          19.11m ±   4%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4          19.30m ±   4%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4          17.06m ±   6%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4          17.99m ±   8%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4          18.36m ±  11%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4          19.29m ±  12%
+SystemBadCount/Clients:_1,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4          18.21m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4      5.026 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4       4.526 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4       4.078 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4       3.671 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4       3.307 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4       2.978 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4       2.682 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4       2.417 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4       2.179 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4       1.965 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4       1.770 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4       1.594 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4       1.438 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4       1.296 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4       1.170 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4       1.055 ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4      951.4m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4      861.3m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4      775.9m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4      701.7m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4      633.6m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4      573.5m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4       519.2m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4       471.0m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4       424.0m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4       384.6m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4       349.1m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4       316.2m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4       287.4m ±   0%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4       260.6m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4       248.1m ±   1%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4       240.8m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4       240.0m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4       233.9m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4       227.4m ±   4%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4       207.4m ±   7%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4       209.1m ±   3%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4       208.3m ±   8%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4       210.3m ±  11%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4       212.1m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4       209.4m ±   2%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4       195.2m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4       196.5m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4       196.8m ±   7%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4        200.9m ±   7%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4        199.3m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4        197.8m ±   5%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4        195.9m ±   7%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4        203.2m ±   9%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4        201.0m ±   9%
+SystemBadCount/Clients:_1,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4        198.6m ±   9%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_100000,_DataPoints:_5000-4      799.8m ±  19%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_90000,_DataPoints:_5000-4       754.8m ±  23%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_81000,_DataPoints:_5000-4       763.3m ±  27%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_72900,_DataPoints:_5000-4       500.4m ±  42%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_65610,_DataPoints:_5000-4       650.6m ±  13%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_59049,_DataPoints:_5000-4       532.0m ±  22%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_53144,_DataPoints:_5000-4       657.7m ±  35%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_47829,_DataPoints:_5000-4       537.0m ±  23%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_43046,_DataPoints:_5000-4       395.7m ±  32%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_38741,_DataPoints:_5000-4       513.4m ±  24%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_34866,_DataPoints:_5000-4       453.6m ±  45%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_31379,_DataPoints:_5000-4       756.9m ±  46%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_28241,_DataPoints:_5000-4       545.7m ±  26%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_25416,_DataPoints:_5000-4       393.9m ±  71%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_22874,_DataPoints:_5000-4       351.3m ±  64%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_20586,_DataPoints:_5000-4       371.8m ±  85%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_18527,_DataPoints:_5000-4       344.1m ±  11%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_16674,_DataPoints:_5000-4       384.6m ±  46%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_15006,_DataPoints:_5000-4       426.4m ±  38%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_13505,_DataPoints:_5000-4       399.1m ±  50%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_12154,_DataPoints:_5000-4       406.2m ±  23%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_10938,_DataPoints:_5000-4       356.0m ±  13%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_9844,_DataPoints:_5000-4        385.3m ±  60%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_8859,_DataPoints:_5000-4        355.1m ±  30%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_7973,_DataPoints:_5000-4        359.4m ±  82%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_7175,_DataPoints:_5000-4        362.2m ±   9%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_6457,_DataPoints:_5000-4        350.8m ±  62%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_5811,_DataPoints:_5000-4        606.9m ±  42%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_5229,_DataPoints:_5000-4        519.3m ±  34%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_4706,_DataPoints:_5000-4        339.9m ±  52%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_4235,_DataPoints:_5000-4        362.3m ±  43%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_3811,_DataPoints:_5000-4        374.2m ±  47%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_3429,_DataPoints:_5000-4        436.1m ±  51%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_3086,_DataPoints:_5000-4        368.2m ±  48%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_2777,_DataPoints:_5000-4        346.2m ±  11%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_2499,_DataPoints:_5000-4        362.2m ±  25%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_2249,_DataPoints:_5000-4        383.5m ±  63%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_2024,_DataPoints:_5000-4        624.0m ±  41%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1821,_DataPoints:_5000-4        350.0m ±  25%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1638,_DataPoints:_5000-4        498.9m ±  40%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1474,_DataPoints:_5000-4        364.3m ±  75%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1326,_DataPoints:_5000-4        446.9m ±  22%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1193,_DataPoints:_5000-4        368.7m ±  41%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_1073,_DataPoints:_5000-4        368.6m ±  20%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_965,_DataPoints:_5000-4         375.1m ±   9%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_868,_DataPoints:_5000-4         378.8m ±  64%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_781,_DataPoints:_5000-4         382.2m ±  53%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_702,_DataPoints:_5000-4         365.8m ±  52%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_631,_DataPoints:_5000-4         402.6m ±  74%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_567,_DataPoints:_5000-4         351.5m ±  19%
+SystemBadCount/Clients:_50,MergeRate:_1000,StreamRate:_510,_DataPoints:_5000-4         433.2m ±  21%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_100000,_DataPoints:_50000-4     9.097 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_90000,_DataPoints:_50000-4      9.251 ±  11%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_81000,_DataPoints:_50000-4      8.751 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_72900,_DataPoints:_50000-4      8.821 ±   6%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_65610,_DataPoints:_50000-4      8.772 ±  13%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_59049,_DataPoints:_50000-4      8.865 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_53144,_DataPoints:_50000-4      8.649 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_47829,_DataPoints:_50000-4      9.180 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_43046,_DataPoints:_50000-4      8.851 ±   9%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_38741,_DataPoints:_50000-4      8.435 ±  11%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_34866,_DataPoints:_50000-4      8.483 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_31379,_DataPoints:_50000-4      8.811 ±  14%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_28241,_DataPoints:_50000-4      8.818 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_25416,_DataPoints:_50000-4      8.592 ±  10%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_22874,_DataPoints:_50000-4      8.676 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_20586,_DataPoints:_50000-4      8.770 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_18527,_DataPoints:_50000-4      8.924 ±   6%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_16674,_DataPoints:_50000-4      8.443 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_15006,_DataPoints:_50000-4      8.545 ±   5%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_13505,_DataPoints:_50000-4      8.873 ±   5%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_12154,_DataPoints:_50000-4      8.849 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_10938,_DataPoints:_50000-4      9.175 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_9844,_DataPoints:_50000-4       8.950 ±   5%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_8859,_DataPoints:_50000-4       8.507 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_7973,_DataPoints:_50000-4       8.603 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_7175,_DataPoints:_50000-4       8.720 ±   2%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_6457,_DataPoints:_50000-4       8.859 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_5811,_DataPoints:_50000-4       8.970 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_5229,_DataPoints:_50000-4       8.741 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_4706,_DataPoints:_50000-4       8.946 ±   7%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_4235,_DataPoints:_50000-4       8.883 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_3811,_DataPoints:_50000-4       7.472 ±  39%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_3429,_DataPoints:_50000-4       9.001 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_3086,_DataPoints:_50000-4       8.941 ±   9%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_2777,_DataPoints:_50000-4       8.298 ±  28%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_2499,_DataPoints:_50000-4       8.923 ±  10%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_2249,_DataPoints:_50000-4       8.579 ±  14%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_2024,_DataPoints:_50000-4       8.946 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1821,_DataPoints:_50000-4       9.445 ±   8%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1638,_DataPoints:_50000-4       8.974 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1474,_DataPoints:_50000-4       8.660 ±  12%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1326,_DataPoints:_50000-4       9.536 ±  11%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1193,_DataPoints:_50000-4       9.008 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_1073,_DataPoints:_50000-4       8.842 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_965,_DataPoints:_50000-4        9.020 ±   5%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_868,_DataPoints:_50000-4        9.028 ±   5%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_781,_DataPoints:_50000-4        8.876 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_702,_DataPoints:_50000-4        9.001 ±   4%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_631,_DataPoints:_50000-4        8.743 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_567,_DataPoints:_50000-4        8.666 ±   3%
+SystemBadCount/Clients:_50,MergeRate:_10000,StreamRate:_510,_DataPoints:_50000-4        8.961 ±   2%
+geomean                                                                                 1.219
+¹ need >= 6 samples for confidence interval at level 0.95
