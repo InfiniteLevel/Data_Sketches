@@ -79,6 +79,7 @@ func resetState() {
 	badCountStateMap.Store("float64", count.NewCountSketch[float64](157, 100, 10))
 	badKllStateMap.Store("int", kll.NewKLLSketch[int](200))
 	badKllStateMap.Store("float64", kll.NewKLLSketch[float64](200))
+	asketchStateMap = sync.Map{}
 }
 
 func PanicRecoveryInterceptor(
