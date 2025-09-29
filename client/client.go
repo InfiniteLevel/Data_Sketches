@@ -23,6 +23,8 @@ func Init[T shared.Number](port string, adr string, sketchType string, dataSetPa
 		KllClient(100, mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "count":
 		CountClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
+	case "asketch":
+		ASketchClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "badCount":
 		BadCountClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "badKll":

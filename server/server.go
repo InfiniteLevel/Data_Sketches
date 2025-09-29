@@ -9,6 +9,8 @@ import (
 	"time"
 
 	pb "github.com/bruhng/distributed-sketching/proto"
+	"github.com/bruhng/distributed-sketching/shared"
+	"github.com/bruhng/distributed-sketching/sketches/asketch"
 	"github.com/bruhng/distributed-sketching/sketches/count"
 	"github.com/bruhng/distributed-sketching/sketches/kll"
 	"google.golang.org/grpc"
@@ -79,6 +81,8 @@ func resetState() {
 	badCountStateMap.Store("float64", count.NewCountSketch[float64](157, 100, 10))
 	badKllStateMap.Store("int", kll.NewKLLSketch[int](200))
 	badKllStateMap.Store("float64", kll.NewKLLSketch[float64](200))
+	asketchStateMap.Store("int", asketch.NewASketch[int](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots))
+	asketchStateMap.Store("float64", asketch.NewASketch[float64](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots))
 }
 
 func PanicRecoveryInterceptor(
@@ -131,5 +135,5 @@ func startServer() {
 	if err := grpcServer.Serve(listener); err != nil {
 		log.Fatalf("Failed to serve: %v", err)
 	}
-
+	log.Printf("Server listening at %v", listener.Addr())
 }

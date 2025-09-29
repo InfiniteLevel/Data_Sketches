@@ -16,6 +16,8 @@ service Sketcher {
   rpc TestLatency (EmptyMessage) returns (EmptyMessage) {}
   rpc BadKll (BadArray) returns (MergeReply) {}
   rpc BadCount (BadArray) returns (MergeReply) {}
+  rpc MergeASketch (ASketch) returns (MergeReply) {}
+  rpc QueryASketch (NumericValue) returns (CountQueryReply) {}
   rpc RestartServer (RestartMessage) returns (EmptyMessage) {}
 }
 
@@ -87,4 +89,21 @@ message EmptyMessage {}
 
 message RestartMessage {
   int64 numMsg = 1;
+}
+
+message ASketch {
+  repeated ASketchFilterEntry filter = 1;
+  CountMin count_min = 2;
+  string type = 3;
+}
+
+message ASketchFilterEntry {
+  NumericValue item = 1;
+  int64 old = 2;
+  int64 new = 3;
+}
+
+message CountMin {
+  repeated IntRow rows = 1;
+  repeated uint32 seeds = 2;
 }

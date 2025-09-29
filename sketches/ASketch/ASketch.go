@@ -2,7 +2,7 @@ package asketch
 
 import (
 	"github.com/bruhng/distributed-sketching/shared"
-	"github.com/bruhng/distributed-sketching/sketches/count-min"
+	countmin "github.com/bruhng/distributed-sketching/sketches/count-min"
 )
 
 type aCount[T shared.Number] struct {
@@ -14,6 +14,12 @@ type aCount[T shared.Number] struct {
 type ASketch[T shared.Number] struct {
 	filter []aCount[T]
 	cms    *countmin.CountMin[T]
+}
+
+type FilterSlot[T shared.Number] struct {
+	Item T
+	Old  int
+	New  int
 }
 
 func NewASketch[T shared.Number](seed int64, width uint64, depth int, m int) *ASketch[T] {
@@ -105,4 +111,53 @@ func (a *ASketch[T]) Query(x T) int {
 		return a.filter[index].new
 	}
 	return a.cms.Query(x)
+}
+
+func (a *ASketch[T]) Merge(other *ASketch[T]) {
+	if other == nil {
+		return
+	}
+	a.cms.Merge(*other.cms)
+	for _, slot := range other.filter {
+		if slot.new < 0 {
+			continue
+		}
+		delta := slot.new - slot.old
+		if delta > 0 {
+			a.AddBy(slot.it, delta)
+		}
+	}
+}
+
+func NewASketchFromState[T shared.Number](filter []FilterSlot[T], rows [][]int, seeds []uint32) *ASketch[T] {
+	f := make([]aCount[T], len(filter))
+	for i, slot := range filter {
+		f[i] = aCount[T]{
+			it:  slot.Item,
+			old: slot.Old,
+			new: slot.New,
+		}
+	}
+	cm := countmin.NewCountMinFromData[T](rows, seeds)
+	return &ASketch[T]{
+		filter: f,
+		cms:    cm,
+	}
+}
+
+func (a *ASketch[T]) Snapshot() ([]FilterSlot[T], [][]int, []uint32) {
+	filterCopy := make([]FilterSlot[T], len(a.filter))
+	for i, slot := range a.filter {
+		filterCopy[i] = FilterSlot[T]{
+			Item: slot.it,
+			Old:  slot.old,
+			New:  slot.new,
+		}
+	}
+	rowsCopy := make([][]int, len(a.cms.Sketch))
+	for i := range a.cms.Sketch {
+		rowsCopy[i] = append([]int(nil), a.cms.Sketch[i]...)
+	}
+	seedsCopy := append([]uint32(nil), a.cms.Seeds...)
+	return filterCopy, rowsCopy, seedsCopy
 }

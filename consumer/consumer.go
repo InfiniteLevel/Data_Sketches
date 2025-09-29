@@ -192,6 +192,32 @@ func Init(port string, adr string) {
 
 			fmt.Println("Histogram saved as histogram.png")
 
+		case "QueryASketch":
+			if len(words) < 2 {
+				fmt.Println("QueryASketch requires an int or float")
+				continue
+			}
+			x, err := strconv.Atoi(words[1])
+			if err != nil {
+				x, err := strconv.ParseFloat(words[1], 32)
+				if err != nil {
+					fmt.Println("QueryASketch requires an int or float")
+					continue
+				}
+				res, err := c.QueryASketch(ctx, &pb.NumericValue{Value: &pb.NumericValue_FloatVal{FloatVal: float64(x)}, Type: "float64"})
+				if err != nil {
+					fmt.Println("Could not fetch: ", err)
+					continue
+				}
+				fmt.Printf("Frequency of %.2f: %d\n", x, res.Res)
+			} else {
+				res, err := c.QueryASketch(ctx, &pb.NumericValue{Value: &pb.NumericValue_IntVal{IntVal: int64(x)}, Type: "int"})
+				if err != nil {
+					fmt.Println("Could not fetch: ", err)
+					continue
+				}
+				fmt.Printf("Frequency of %d: %d\n", x, res.Res)
+			}
 		case "help":
 			fmt.Println("The valid types are [int, float]\n")
 
@@ -203,6 +229,9 @@ func Init(port string, adr string) {
 
 			fmt.Println("QueryKll x")
 			fmt.Println("Returns quantlie of value [int/float]\n")
+
+			fmt.Println("QueryASketch x")
+			fmt.Println("Returns frequency count of value [int/float] from ASketch\n")
 
 			fmt.Println("PlotKll [int] [string]")
 			fmt.Println("Returns a histogram with [int] buckets of sketch of type [string]\n")
