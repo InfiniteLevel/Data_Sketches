@@ -3,8 +3,10 @@ package stream
 import (
 	"encoding/csv"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/bruhng/distributed-sketching/shared"
@@ -70,20 +72,38 @@ func NewStreamFromCsv[T shared.Number](csvPath string, field string, delayNano i
 		if err != nil || cutoff == len(streamArr) {
 			break
 		}
-		data := record[columnIndex]
-		parsedData, err := parseNumber(data)
-		if err != nil {
-			fmt.Println(err)
-			panic("Data is not int or float")
-		}
-		parsed, ok := parsedData.(T)
-		if ok {
-			streamArr = append(streamArr, parsed)
-		} else {
-			fmt.Println(err)
-			panic("Data is not int or float")
+		data := strings.TrimSpace(record[columnIndex])
+
+		var parsed T
+		var ok bool
+
+		switch any(*new(T)).(type) {
+		case int64:
+			// parse int first, or float second
+			if iv, err := strconv.ParseInt(data, 10, 64); err == nil {
+				parsed, ok = T(iv), true
+			} else if fv, err := strconv.ParseFloat(data, 64); err == nil {
+				// accept float number（e.g. 4.0、23.000）
+				if math.Abs(fv-math.Round(fv)) < 1e-9 {
+					parsed, ok = T(int64(math.Round(fv))), true
+				} else {
+					parsed, ok = T(int64(math.Round(fv))), true
+				}
+			}
+
+		case float64:
+			// float first, or int second
+			if fv, err := strconv.ParseFloat(data, 64); err == nil {
+				parsed, ok = T(fv), true
+			} else if iv, err := strconv.ParseInt(data, 10, 64); err == nil {
+				parsed, ok = T(float64(iv)), true
+			}
 		}
 
+		if !ok {
+			continue
+		}
+		streamArr = append(streamArr, parsed)
 	}
 	go func() {
 		for i := runAmount; i != 0; i-- {

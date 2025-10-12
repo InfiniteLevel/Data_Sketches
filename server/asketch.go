@@ -11,21 +11,19 @@ import (
 )
 
 var (
-	asketchStateOnce sync.Once
-	asketchStateMap  sync.Map
-	asketchMutex     sync.Mutex
+	asketchStateMap sync.Map
+	asketchMutex    sync.Mutex
 )
 
 func getOrCreateASketchState[T shared.Number]() *asketch.ASketch[T] {
-	key := fmt.Sprintf("%T", *new(T))
-	var sketch *asketch.ASketch[T]
-	asketchStateOnce.Do(func() {
-		asketchStateMap.Store(key, asketch.NewASketch[T](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots))
-	})
-	if val, ok := asketchStateMap.Load(key); ok {
-		sketch = val.(*asketch.ASketch[T])
+	key := fmt.Sprintf("%T", *new(T)) // "int" or "float64"
+
+	if v, ok := asketchStateMap.Load(key); ok {
+		return v.(*asketch.ASketch[T])
 	}
-	return sketch
+	sk := asketch.NewASketch[T](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots)
+	actual, _ := asketchStateMap.LoadOrStore(key, sk)
+	return actual.(*asketch.ASketch[T])
 }
 
 // Convert protobuf ASketch to internal ASketch
@@ -44,7 +42,7 @@ func convertProtoASToAS[T shared.Number](protoData *pb.ASketch) *asketch.ASketch
 			}
 		case "float64":
 			if floatVal, ok := entry.Item.Value.(*pb.NumericValue_FloatVal); ok {
-				item = T(any(floatVal.FloatVal).(T))
+				item = T(floatVal.FloatVal)
 			}
 		}
 
