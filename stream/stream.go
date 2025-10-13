@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/bruhng/distributed-sketching/shared"
-	"github.com/google/gopacket/pcap"
 )
 
 type Stream[T shared.Number] struct {
@@ -99,10 +98,6 @@ func NewStreamFromCsv[T shared.Number](csvPath string, field string, delayNano i
 	return dataStream
 }
 
-func NewStreamFromPcap[T shared.Number](pcapPath string, field string, delayNano int, runAmount int, optional_cutoff ...int) *Stream[T] {
-	dataStream := NewStream((make[]T,0),delayNano)
-	handle, err := pcap.OpenOffline(pcapPath)
-}
 func parseNumber(s string) (any, error) {
 	if intValue, err := strconv.ParseInt(s, 10, 64); err == nil {
 		return intValue, nil
