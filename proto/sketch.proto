@@ -106,6 +106,12 @@ message ASketchFilterEntry {
   int64 new = 3;
 }
 
+message BufBatch {
+  repeated NumericValue items = 1;
+  string type = 2;  // e.g., "int", "double"
+}
+
+
 message CountMin {
   repeated IntRow rows = 1;
   repeated uint32 seeds = 2;

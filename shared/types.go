@@ -13,3 +13,8 @@ const (
 	ASketchDepth int    = 4
 	ASketchSlots int    = 16
 )
+
+// Primitive buf constants
+const (
+	BufSize int = 1000 //number of elements in the buf
+)

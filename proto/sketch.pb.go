@@ -7,11 +7,12 @@
 package proto
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -875,6 +876,58 @@ func (x *ASketchFilterEntry) GetNew() int64 {
 	return 0
 }
 
+type BufBatch struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Items         []*NumericValue        `protobuf:"bytes,1,rep,name=items,proto3" json:"items,omitempty"`
+	Type          string                 `protobuf:"bytes,2,opt,name=type,proto3" json:"type,omitempty"` // e.g., "int", "double"
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *BufBatch) Reset() {
+	*x = BufBatch{}
+	mi := &file_sketch_proto_msgTypes[16]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *BufBatch) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*BufBatch) ProtoMessage() {}
+
+func (x *BufBatch) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[16]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use BufBatch.ProtoReflect.Descriptor instead.
+func (*BufBatch) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{16}
+}
+
+func (x *BufBatch) GetItems() []*NumericValue {
+	if x != nil {
+		return x.Items
+	}
+	return nil
+}
+
+func (x *BufBatch) GetType() string {
+	if x != nil {
+		return x.Type
+	}
+	return ""
+}
+
 type CountMin struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Rows          []*IntRow              `protobuf:"bytes,1,rep,name=rows,proto3" json:"rows,omitempty"`
@@ -1225,7 +1278,10 @@ const file_sketch_proto_rawDesc = "" +
 	"\x12ASketchFilterEntry\x12'\n" +
 	"\x04item\x18\x01 \x01(\v2\x13.proto.NumericValueR\x04item\x12\x10\n" +
 	"\x03old\x18\x02 \x01(\x03R\x03old\x12\x10\n" +
-	"\x03new\x18\x03 \x01(\x03R\x03new\"C\n" +
+	"\x03new\x18\x03 \x01(\x03R\x03new\"I\n" +
+	"\bBufBatch\x12)\n" +
+	"\x05items\x18\x01 \x03(\v2\x13.proto.NumericValueR\x05items\x12\x12\n" +
+	"\x04type\x18\x02 \x01(\tR\x04type\"C\n" +
 	"\bCountMin\x12!\n" +
 	"\x04rows\x18\x01 \x03(\v2\r.proto.IntRowR\x04rows\x12\x14\n" +
 	"\x05seeds\x18\x02 \x03(\rR\x05seeds\"E\n" +
@@ -1304,7 +1360,7 @@ var file_sketch_proto_depIdxs = []int32{
 	5,  // 2: proto.BadArray.arr:type_name -> proto.NumericRow
 	6,  // 3: proto.NumericRow.values:type_name -> proto.NumericValue
 	15, // 4: proto.ASketch.filter:type_name -> proto.ASketchFilterEntry
-	16, // 5: proto.ASketch.count_min:type_name -> proto.CountMin
+	17, // 5: proto.ASketch.count_min:type_name -> proto.CountMin
 	6,  // 6: proto.ASketchFilterEntry.item:type_name -> proto.NumericValue
 	1,  // 7: proto.CountMin.rows:type_name -> proto.IntRow
 	6,  // 8: proto.TopKEntry.key:type_name -> proto.NumericValue
