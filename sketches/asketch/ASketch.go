@@ -113,7 +113,17 @@ func (a *ASketch[T]) Query(x T) int {
 	return a.cms.Query(x)
 }
 
-func (a *ASketch[T]) Merge(other *ASketch[T]) {
+func (a *ASketch[T]) MergeBuf(otherBuf []T) {
+	if otherBuf == nil {
+		return
+	}
+	for _, item := range otherBuf {
+		a.Add(item)
+	}
+
+}
+
+func (a *ASketch[T]) MergeSketch(other *ASketch[T]) {
 	if other == nil {
 		return
 	}

@@ -29,6 +29,8 @@ func Init[T shared.Number](port string, adr string, sketchType string, dataSetPa
 		BadCountClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "badKll":
 		BadKllClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
+	case "streamClient":
+		StreamClient(dataStream, adr+":"+port, startRealConnection)
 	default:
 		panic("No sketch provided or invalid sketch")
 	}

@@ -19,6 +19,7 @@ service Sketcher {
   rpc MergeASketch (ASketch) returns (MergeReply) {}
   rpc QueryASketch (NumericValue) returns (CountQueryReply) {}
   rpc RestartServer (RestartMessage) returns (EmptyMessage) {}
+  rpc MergeBufIntoASketch (BufBatch) returns (MergeReply) {}
 }
 
 
@@ -102,6 +103,12 @@ message ASketchFilterEntry {
   int64 old = 2;
   int64 new = 3;
 }
+
+message BufBatch {
+  repeated NumericValue items = 1;
+  string type = 2;  // e.g., "int", "double"
+}
+
 
 message CountMin {
   repeated IntRow rows = 1;

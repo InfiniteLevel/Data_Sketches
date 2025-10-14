@@ -76,13 +76,13 @@ func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply
 		asketchState := getOrCreateASketchState[int]()
 		sketch := convertProtoASToAS[int](in)
 		asketchMutex.Lock()
-		asketchState.Merge(sketch)
+		asketchState.MergeSketch(sketch)
 		asketchMutex.Unlock()
 	case "float64":
 		asketchState := getOrCreateASketchState[float64]()
 		sketch := convertProtoASToAS[float64](in)
 		asketchMutex.Lock()
-		asketchState.Merge(sketch)
+		asketchState.MergeSketch(sketch)
 		asketchMutex.Unlock()
 	default:
 		return nil, fmt.Errorf("%s is not supported, please submit a valid type", in.Type)
