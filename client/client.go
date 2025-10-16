@@ -31,7 +31,7 @@ func Init[T shared.Number](port string, adr string, sketchType string, dataSetPa
 	case "badKll":
 		BadKllClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "streamClient":
-		StreamClient(dataStream, adr+":"+port, startRealConnection)
+		StreamClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	default:
 		panic("No sketch provided or invalid sketch")
 	}
@@ -106,4 +106,5 @@ func MakeRequest[T any](protoSketch *T, addr string, merge mergeFunction[T], con
 
 	}
 	*attempt = 0
+	fmt.Printf("Successfully sent sketch to server at %s\n", addr)
 }
