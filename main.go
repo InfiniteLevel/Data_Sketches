@@ -22,9 +22,10 @@ func main() {
 
 	flag.Parse()
 	if *isClient {
-		if *dataSetType == "float" {
+		switch *dataSetType {
+		case "float":
 			client.Init[float64](*port, *adress, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
-		} else if *dataSetType == "int" {
+		case "int":
 			client.Init[int](*port, *adress, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
 		}
 	} else if *isConsumer {
