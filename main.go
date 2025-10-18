@@ -12,7 +12,7 @@ func main() {
 	isClient := flag.Bool("client", false, "use flag if you want to create a client process instead of server")
 	isConsumer := flag.Bool("consumer", false, "use flag if you want to create a consumer process instead of a server")
 	port := flag.String("port", "8080", "Choose what port to use")
-	adress := flag.String("a", "127.0.0.1", "Choose what ip to connect to")
+	address := flag.String("a", "127.0.0.1", "Choose what ip to connect to")
 	sketchType := flag.String("sketch", "kll", "Choose what sketch to use")
 	dataSetPath := flag.String("d", "./data/PVS 1/dataset_gps.csv", "Choose what data set path to use as data stream")
 	dataSetName := flag.String("name", "speed_meters_per_second", "Choose what part of the data set to use as data stream")
@@ -29,7 +29,7 @@ func main() {
 			client.Init[int](*port, *adress, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
 		}
 	} else if *isConsumer {
-		consumer.Init(*port, *adress)
+		consumer.Init(*port, *address)
 	} else {
 		server.Init(*port)
 	}
