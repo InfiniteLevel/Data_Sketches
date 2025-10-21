@@ -77,7 +77,7 @@ func Init(port string, adr string) {
 			}
 			x, err := strconv.Atoi(words[1])
 			if err != nil {
-				x, err := strconv.ParseFloat(words[1], 32)
+				x, err := strconv.ParseFloat(words[1], 64)
 				if err != nil {
 					fmt.Println("QueryKll requires an int or float")
 					continue
@@ -199,7 +199,7 @@ func Init(port string, adr string) {
 			}
 			x, err := strconv.Atoi(words[1])
 			if err != nil {
-				x, err := strconv.ParseFloat(words[1], 32)
+				x, err := strconv.ParseFloat(words[1], 64)
 				if err != nil {
 					fmt.Println("QueryASketch requires an int or float")
 					continue

@@ -125,8 +125,6 @@ func startServer() {
 
 	}
 
-	// }
-
 	grpcServer = grpc.NewServer(
 		grpc.UnaryInterceptor(PanicRecoveryInterceptor),
 		grpc.MaxConcurrentStreams(100_000),

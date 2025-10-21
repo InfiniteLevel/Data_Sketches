@@ -1,6 +1,8 @@
 package asketch
 
 import (
+	"sort"
+
 	"github.com/bruhng/distributed-sketching/shared"
 	countmin "github.com/bruhng/distributed-sketching/sketches/count-min"
 )
@@ -160,4 +162,23 @@ func (a *ASketch[T]) Snapshot() ([]FilterSlot[T], [][]int, []uint32) {
 	}
 	seedsCopy := append([]uint32(nil), a.cms.Seeds...)
 	return filterCopy, rowsCopy, seedsCopy
+}
+
+func (a *ASketch[T]) FilterSnapshot() []FilterSlot[T] {
+	out := make([]FilterSlot[T], 0, len(a.filter))
+	for _, s := range a.filter {
+		if s.new >= 0 {
+			out = append(out, FilterSlot[T]{Item: s.it, Old: s.old, New: s.new})
+		}
+	}
+	return out
+}
+
+func (a *ASketch[T]) TopK(k int) []FilterSlot[T] {
+	snap := a.FilterSnapshot()
+	sort.Slice(snap, func(i, j int) bool { return snap[i].New > snap[j].New })
+	if k > len(snap) {
+		k = len(snap)
+	}
+	return snap[:k]
 }

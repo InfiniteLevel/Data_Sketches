@@ -10,7 +10,7 @@ import (
 	"github.com/bruhng/distributed-sketching/stream"
 )
 
-func ASketchClient[T shared.Number](mergeAfter int, dataStream stream.Stream[T], addr string, startConnection connectionStarter) {
+func ASketchClient[T shared.Number](mergeAfter int, dataStream stream.Stream[T], fieldName string, addr string, startConnection connectionStarter) {
 	var reconAttempt *int = new(int)
 	*reconAttempt = 0
 	c, conn, err := startConnection(addr)
@@ -25,7 +25,7 @@ func ASketchClient[T shared.Number](mergeAfter int, dataStream stream.Stream[T],
 		i++
 
 		if i%mergeAfter == 0 {
-			protoSketch := ConvertToProtoASketch(sketch)
+			protoSketch := ConvertToProtoASketch(sketch, fieldName)
 
 			MakeRequest(protoSketch, addr, c.MergeASketch, conn, &c, startConnection, reconAttempt)
 			sketch = asketch.NewASketch[T](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots)
@@ -37,7 +37,7 @@ func ASketchClient[T shared.Number](mergeAfter int, dataStream stream.Stream[T],
 	blackhole = sketch
 }
 
-func GetASketch[T shared.Number](mergeAfter int, dataStream stream.Stream[T]) *pb.ASketch {
+func GetASketch[T shared.Number](mergeAfter int, dataStream stream.Stream[T], fieldName string) *pb.ASketch {
 	sketch := asketch.NewASketch[T](shared.ASketchSeed, shared.ASketchWidth, shared.ASketchDepth, shared.ASketchSlots)
 	i := 0
 	for data := range dataStream.Data {
@@ -45,20 +45,22 @@ func GetASketch[T shared.Number](mergeAfter int, dataStream stream.Stream[T]) *p
 		i++
 
 		if i%mergeAfter == 0 {
-			return ConvertToProtoASketch(sketch)
+			return ConvertToProtoASketch(sketch, fieldName)
 		}
 	}
 	return nil
 }
 
-func ConvertToProtoASketch[T shared.Number](sketch *asketch.ASketch[T]) *pb.ASketch {
+func ConvertToProtoASketch[T shared.Number](sketch *asketch.ASketch[T], fieldName string) *pb.ASketch {
 	t := fmt.Sprintf("%T", *new(T))
 
 	// Get snapshot of the sketch
 	filter, rows, seeds := sketch.Snapshot()
 
-	protoASketch := &pb.ASketch{Type: t}
-
+	protoASketch := &pb.ASketch{
+		Type:  t,
+		Field: fieldName,
+	}
 	// Convert filter entries
 	for _, slot := range filter {
 		var protoValue *pb.NumericValue
