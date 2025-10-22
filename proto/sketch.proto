@@ -21,6 +21,7 @@ service Sketcher {
   rpc RestartServer (RestartMessage) returns (EmptyMessage) {}
   rpc TopKASketch(TopKRequest)        returns (TopKReply);
   rpc DumpFilter(DumpFilterRequest)   returns (DumpFilterReply);
+  rpc MergeBufIntoASketch (BufBatch) returns (MergeReply) {}
 }
 
 

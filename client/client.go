@@ -17,8 +17,8 @@ var MAX_RECONN_ATTEMPTS int = 20
 
 func Init[T shared.Number](port string, adr string, sketchType string, dataSetPath string, headerName string, numStreamRuns int, streamDelayms int, mergeAfter int) {
 	fmt.Printf("[debug] T = %T\n", *new(T))
-
 	dataStream := *stream.NewStreamFromCsv[T](dataSetPath, headerName, streamDelayms, numStreamRuns)
+
 	switch sketchType {
 	case "kll":
 		KllClient(100, mergeAfter, dataStream, adr+":"+port, startRealConnection)
