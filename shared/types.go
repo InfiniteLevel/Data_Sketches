@@ -9,7 +9,7 @@ type Number interface {
 // ASketch constants
 const (
 	ASketchSeed  int64  = 157
-	ASketchWidth uint64 = 2048
-	ASketchDepth int    = 7
-	ASketchSlots int    = 128
+	ASketchWidth uint64 = 512
+	ASketchDepth int    = 4
+	ASketchSlots int    = 16
 )

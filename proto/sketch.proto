@@ -19,6 +19,8 @@ service Sketcher {
   rpc MergeASketch (ASketch) returns (MergeReply) {}
   rpc QueryASketch (NumericValue) returns (CountQueryReply) {}
   rpc RestartServer (RestartMessage) returns (EmptyMessage) {}
+  rpc TopKASketch(TopKRequest)        returns (TopKReply);
+  rpc DumpFilter(DumpFilterRequest)   returns (DumpFilterReply);
 }
 
 
@@ -95,6 +97,7 @@ message ASketch {
   repeated ASketchFilterEntry filter = 1;
   CountMin count_min = 2;
   string type = 3;
+  string field = 4;
 }
 
 message ASketchFilterEntry {
@@ -106,4 +109,27 @@ message ASketchFilterEntry {
 message CountMin {
   repeated IntRow rows = 1;
   repeated uint32 seeds = 2;
+}
+
+message TopKRequest {
+  uint32 k   = 1;       
+  string type = 2;
+  string field = 3;     
+}
+
+message TopKEntry {
+  NumericValue key = 1;  
+  int64 est_freq   = 2;  
+}
+
+message TopKReply {
+  repeated TopKEntry entries = 1;
+}
+
+message DumpFilterRequest {
+  string type = 1;      
+}
+
+message DumpFilterReply {
+  repeated ASketchFilterEntry entries = 1;
 }

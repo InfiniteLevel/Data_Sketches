@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v4.25.3
-// source: proto/sketch.proto
+// source: sketch.proto
 
 package proto
 
@@ -31,6 +31,8 @@ const (
 	Sketcher_MergeASketch_FullMethodName    = "/proto.Sketcher/MergeASketch"
 	Sketcher_QueryASketch_FullMethodName    = "/proto.Sketcher/QueryASketch"
 	Sketcher_RestartServer_FullMethodName   = "/proto.Sketcher/RestartServer"
+	Sketcher_TopKASketch_FullMethodName     = "/proto.Sketcher/TopKASketch"
+	Sketcher_DumpFilter_FullMethodName      = "/proto.Sketcher/DumpFilter"
 )
 
 // SketcherClient is the client API for Sketcher service.
@@ -50,6 +52,8 @@ type SketcherClient interface {
 	MergeASketch(ctx context.Context, in *ASketch, opts ...grpc.CallOption) (*MergeReply, error)
 	QueryASketch(ctx context.Context, in *NumericValue, opts ...grpc.CallOption) (*CountQueryReply, error)
 	RestartServer(ctx context.Context, in *RestartMessage, opts ...grpc.CallOption) (*EmptyMessage, error)
+	TopKASketch(ctx context.Context, in *TopKRequest, opts ...grpc.CallOption) (*TopKReply, error)
+	DumpFilter(ctx context.Context, in *DumpFilterRequest, opts ...grpc.CallOption) (*DumpFilterReply, error)
 }
 
 type sketcherClient struct {
@@ -180,6 +184,26 @@ func (c *sketcherClient) RestartServer(ctx context.Context, in *RestartMessage, 
 	return out, nil
 }
 
+func (c *sketcherClient) TopKASketch(ctx context.Context, in *TopKRequest, opts ...grpc.CallOption) (*TopKReply, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(TopKReply)
+	err := c.cc.Invoke(ctx, Sketcher_TopKASketch_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *sketcherClient) DumpFilter(ctx context.Context, in *DumpFilterRequest, opts ...grpc.CallOption) (*DumpFilterReply, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(DumpFilterReply)
+	err := c.cc.Invoke(ctx, Sketcher_DumpFilter_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // SketcherServer is the server API for Sketcher service.
 // All implementations must embed UnimplementedSketcherServer
 // for forward compatibility.
@@ -197,6 +221,8 @@ type SketcherServer interface {
 	MergeASketch(context.Context, *ASketch) (*MergeReply, error)
 	QueryASketch(context.Context, *NumericValue) (*CountQueryReply, error)
 	RestartServer(context.Context, *RestartMessage) (*EmptyMessage, error)
+	TopKASketch(context.Context, *TopKRequest) (*TopKReply, error)
+	DumpFilter(context.Context, *DumpFilterRequest) (*DumpFilterReply, error)
 	mustEmbedUnimplementedSketcherServer()
 }
 
@@ -242,6 +268,12 @@ func (UnimplementedSketcherServer) QueryASketch(context.Context, *NumericValue) 
 }
 func (UnimplementedSketcherServer) RestartServer(context.Context, *RestartMessage) (*EmptyMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method RestartServer not implemented")
+}
+func (UnimplementedSketcherServer) TopKASketch(context.Context, *TopKRequest) (*TopKReply, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TopKASketch not implemented")
+}
+func (UnimplementedSketcherServer) DumpFilter(context.Context, *DumpFilterRequest) (*DumpFilterReply, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DumpFilter not implemented")
 }
 func (UnimplementedSketcherServer) mustEmbedUnimplementedSketcherServer() {}
 func (UnimplementedSketcherServer) testEmbeddedByValue()                  {}
@@ -480,6 +512,42 @@ func _Sketcher_RestartServer_Handler(srv interface{}, ctx context.Context, dec f
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Sketcher_TopKASketch_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(TopKRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(SketcherServer).TopKASketch(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Sketcher_TopKASketch_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(SketcherServer).TopKASketch(ctx, req.(*TopKRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _Sketcher_DumpFilter_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(DumpFilterRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(SketcherServer).DumpFilter(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Sketcher_DumpFilter_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(SketcherServer).DumpFilter(ctx, req.(*DumpFilterRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Sketcher_ServiceDesc is the grpc.ServiceDesc for Sketcher service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -535,7 +603,15 @@ var Sketcher_ServiceDesc = grpc.ServiceDesc{
 			MethodName: "RestartServer",
 			Handler:    _Sketcher_RestartServer_Handler,
 		},
+		{
+			MethodName: "TopKASketch",
+			Handler:    _Sketcher_TopKASketch_Handler,
+		},
+		{
+			MethodName: "DumpFilter",
+			Handler:    _Sketcher_DumpFilter_Handler,
+		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/sketch.proto",
+	Metadata: "sketch.proto",
 }

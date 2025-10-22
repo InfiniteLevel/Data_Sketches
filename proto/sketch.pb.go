@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.9
 // 	protoc        v4.25.3
-// source: proto/sketch.proto
+// source: sketch.proto
 
 package proto
 
@@ -32,7 +32,7 @@ type CountSketch struct {
 
 func (x *CountSketch) Reset() {
 	*x = CountSketch{}
-	mi := &file_proto_sketch_proto_msgTypes[0]
+	mi := &file_sketch_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -44,7 +44,7 @@ func (x *CountSketch) String() string {
 func (*CountSketch) ProtoMessage() {}
 
 func (x *CountSketch) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[0]
+	mi := &file_sketch_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -57,7 +57,7 @@ func (x *CountSketch) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CountSketch.ProtoReflect.Descriptor instead.
 func (*CountSketch) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{0}
+	return file_sketch_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CountSketch) GetRows() []*IntRow {
@@ -90,7 +90,7 @@ type IntRow struct {
 
 func (x *IntRow) Reset() {
 	*x = IntRow{}
-	mi := &file_proto_sketch_proto_msgTypes[1]
+	mi := &file_sketch_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -102,7 +102,7 @@ func (x *IntRow) String() string {
 func (*IntRow) ProtoMessage() {}
 
 func (x *IntRow) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[1]
+	mi := &file_sketch_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -115,7 +115,7 @@ func (x *IntRow) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IntRow.ProtoReflect.Descriptor instead.
 func (*IntRow) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{1}
+	return file_sketch_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *IntRow) GetVal() []int64 {
@@ -134,7 +134,7 @@ type CountQueryReply struct {
 
 func (x *CountQueryReply) Reset() {
 	*x = CountQueryReply{}
-	mi := &file_proto_sketch_proto_msgTypes[2]
+	mi := &file_sketch_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -146,7 +146,7 @@ func (x *CountQueryReply) String() string {
 func (*CountQueryReply) ProtoMessage() {}
 
 func (x *CountQueryReply) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[2]
+	mi := &file_sketch_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -159,7 +159,7 @@ func (x *CountQueryReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CountQueryReply.ProtoReflect.Descriptor instead.
 func (*CountQueryReply) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{2}
+	return file_sketch_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *CountQueryReply) GetRes() int64 {
@@ -180,7 +180,7 @@ type KLLSketch struct {
 
 func (x *KLLSketch) Reset() {
 	*x = KLLSketch{}
-	mi := &file_proto_sketch_proto_msgTypes[3]
+	mi := &file_sketch_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -192,7 +192,7 @@ func (x *KLLSketch) String() string {
 func (*KLLSketch) ProtoMessage() {}
 
 func (x *KLLSketch) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[3]
+	mi := &file_sketch_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -205,7 +205,7 @@ func (x *KLLSketch) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use KLLSketch.ProtoReflect.Descriptor instead.
 func (*KLLSketch) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{3}
+	return file_sketch_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *KLLSketch) GetRows() []*NumericRow {
@@ -239,7 +239,7 @@ type BadArray struct {
 
 func (x *BadArray) Reset() {
 	*x = BadArray{}
-	mi := &file_proto_sketch_proto_msgTypes[4]
+	mi := &file_sketch_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -251,7 +251,7 @@ func (x *BadArray) String() string {
 func (*BadArray) ProtoMessage() {}
 
 func (x *BadArray) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[4]
+	mi := &file_sketch_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -264,7 +264,7 @@ func (x *BadArray) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BadArray.ProtoReflect.Descriptor instead.
 func (*BadArray) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{4}
+	return file_sketch_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *BadArray) GetArr() *NumericRow {
@@ -290,7 +290,7 @@ type NumericRow struct {
 
 func (x *NumericRow) Reset() {
 	*x = NumericRow{}
-	mi := &file_proto_sketch_proto_msgTypes[5]
+	mi := &file_sketch_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -302,7 +302,7 @@ func (x *NumericRow) String() string {
 func (*NumericRow) ProtoMessage() {}
 
 func (x *NumericRow) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[5]
+	mi := &file_sketch_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -315,7 +315,7 @@ func (x *NumericRow) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NumericRow.ProtoReflect.Descriptor instead.
 func (*NumericRow) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{5}
+	return file_sketch_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *NumericRow) GetValues() []*NumericValue {
@@ -339,7 +339,7 @@ type NumericValue struct {
 
 func (x *NumericValue) Reset() {
 	*x = NumericValue{}
-	mi := &file_proto_sketch_proto_msgTypes[6]
+	mi := &file_sketch_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -351,7 +351,7 @@ func (x *NumericValue) String() string {
 func (*NumericValue) ProtoMessage() {}
 
 func (x *NumericValue) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[6]
+	mi := &file_sketch_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -364,7 +364,7 @@ func (x *NumericValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NumericValue.ProtoReflect.Descriptor instead.
 func (*NumericValue) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{6}
+	return file_sketch_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *NumericValue) GetValue() isNumericValue_Value {
@@ -425,7 +425,7 @@ type ReverseQuery struct {
 
 func (x *ReverseQuery) Reset() {
 	*x = ReverseQuery{}
-	mi := &file_proto_sketch_proto_msgTypes[7]
+	mi := &file_sketch_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -437,7 +437,7 @@ func (x *ReverseQuery) String() string {
 func (*ReverseQuery) ProtoMessage() {}
 
 func (x *ReverseQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[7]
+	mi := &file_sketch_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -450,7 +450,7 @@ func (x *ReverseQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReverseQuery.ProtoReflect.Descriptor instead.
 func (*ReverseQuery) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{7}
+	return file_sketch_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *ReverseQuery) GetPhi() float64 {
@@ -477,7 +477,7 @@ type QueryReturn struct {
 
 func (x *QueryReturn) Reset() {
 	*x = QueryReturn{}
-	mi := &file_proto_sketch_proto_msgTypes[8]
+	mi := &file_sketch_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -489,7 +489,7 @@ func (x *QueryReturn) String() string {
 func (*QueryReturn) ProtoMessage() {}
 
 func (x *QueryReturn) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[8]
+	mi := &file_sketch_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -502,7 +502,7 @@ func (x *QueryReturn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use QueryReturn.ProtoReflect.Descriptor instead.
 func (*QueryReturn) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{8}
+	return file_sketch_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *QueryReturn) GetPhi() int64 {
@@ -528,7 +528,7 @@ type MergeReply struct {
 
 func (x *MergeReply) Reset() {
 	*x = MergeReply{}
-	mi := &file_proto_sketch_proto_msgTypes[9]
+	mi := &file_sketch_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -540,7 +540,7 @@ func (x *MergeReply) String() string {
 func (*MergeReply) ProtoMessage() {}
 
 func (x *MergeReply) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[9]
+	mi := &file_sketch_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -553,7 +553,7 @@ func (x *MergeReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MergeReply.ProtoReflect.Descriptor instead.
 func (*MergeReply) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{9}
+	return file_sketch_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *MergeReply) GetStatus() int64 {
@@ -573,7 +573,7 @@ type PlotRequest struct {
 
 func (x *PlotRequest) Reset() {
 	*x = PlotRequest{}
-	mi := &file_proto_sketch_proto_msgTypes[10]
+	mi := &file_sketch_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -585,7 +585,7 @@ func (x *PlotRequest) String() string {
 func (*PlotRequest) ProtoMessage() {}
 
 func (x *PlotRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[10]
+	mi := &file_sketch_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -598,7 +598,7 @@ func (x *PlotRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlotRequest.ProtoReflect.Descriptor instead.
 func (*PlotRequest) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{10}
+	return file_sketch_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *PlotRequest) GetNumBins() int64 {
@@ -625,7 +625,7 @@ type PlotKllReply struct {
 
 func (x *PlotKllReply) Reset() {
 	*x = PlotKllReply{}
-	mi := &file_proto_sketch_proto_msgTypes[11]
+	mi := &file_sketch_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -637,7 +637,7 @@ func (x *PlotKllReply) String() string {
 func (*PlotKllReply) ProtoMessage() {}
 
 func (x *PlotKllReply) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[11]
+	mi := &file_sketch_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -650,7 +650,7 @@ func (x *PlotKllReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlotKllReply.ProtoReflect.Descriptor instead.
 func (*PlotKllReply) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{11}
+	return file_sketch_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *PlotKllReply) GetStep() float64 {
@@ -675,7 +675,7 @@ type EmptyMessage struct {
 
 func (x *EmptyMessage) Reset() {
 	*x = EmptyMessage{}
-	mi := &file_proto_sketch_proto_msgTypes[12]
+	mi := &file_sketch_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -687,7 +687,7 @@ func (x *EmptyMessage) String() string {
 func (*EmptyMessage) ProtoMessage() {}
 
 func (x *EmptyMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[12]
+	mi := &file_sketch_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -700,7 +700,7 @@ func (x *EmptyMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyMessage.ProtoReflect.Descriptor instead.
 func (*EmptyMessage) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{12}
+	return file_sketch_proto_rawDescGZIP(), []int{12}
 }
 
 type RestartMessage struct {
@@ -712,7 +712,7 @@ type RestartMessage struct {
 
 func (x *RestartMessage) Reset() {
 	*x = RestartMessage{}
-	mi := &file_proto_sketch_proto_msgTypes[13]
+	mi := &file_sketch_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -724,7 +724,7 @@ func (x *RestartMessage) String() string {
 func (*RestartMessage) ProtoMessage() {}
 
 func (x *RestartMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[13]
+	mi := &file_sketch_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -737,7 +737,7 @@ func (x *RestartMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RestartMessage.ProtoReflect.Descriptor instead.
 func (*RestartMessage) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{13}
+	return file_sketch_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *RestartMessage) GetNumMsg() int64 {
@@ -752,13 +752,14 @@ type ASketch struct {
 	Filter        []*ASketchFilterEntry  `protobuf:"bytes,1,rep,name=filter,proto3" json:"filter,omitempty"`
 	CountMin      *CountMin              `protobuf:"bytes,2,opt,name=count_min,json=countMin,proto3" json:"count_min,omitempty"`
 	Type          string                 `protobuf:"bytes,3,opt,name=type,proto3" json:"type,omitempty"`
+	Field         string                 `protobuf:"bytes,4,opt,name=field,proto3" json:"field,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *ASketch) Reset() {
 	*x = ASketch{}
-	mi := &file_proto_sketch_proto_msgTypes[14]
+	mi := &file_sketch_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -770,7 +771,7 @@ func (x *ASketch) String() string {
 func (*ASketch) ProtoMessage() {}
 
 func (x *ASketch) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[14]
+	mi := &file_sketch_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -783,7 +784,7 @@ func (x *ASketch) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ASketch.ProtoReflect.Descriptor instead.
 func (*ASketch) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{14}
+	return file_sketch_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *ASketch) GetFilter() []*ASketchFilterEntry {
@@ -807,6 +808,13 @@ func (x *ASketch) GetType() string {
 	return ""
 }
 
+func (x *ASketch) GetField() string {
+	if x != nil {
+		return x.Field
+	}
+	return ""
+}
+
 type ASketchFilterEntry struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Item          *NumericValue          `protobuf:"bytes,1,opt,name=item,proto3" json:"item,omitempty"`
@@ -818,7 +826,7 @@ type ASketchFilterEntry struct {
 
 func (x *ASketchFilterEntry) Reset() {
 	*x = ASketchFilterEntry{}
-	mi := &file_proto_sketch_proto_msgTypes[15]
+	mi := &file_sketch_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -830,7 +838,7 @@ func (x *ASketchFilterEntry) String() string {
 func (*ASketchFilterEntry) ProtoMessage() {}
 
 func (x *ASketchFilterEntry) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[15]
+	mi := &file_sketch_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -843,7 +851,7 @@ func (x *ASketchFilterEntry) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ASketchFilterEntry.ProtoReflect.Descriptor instead.
 func (*ASketchFilterEntry) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{15}
+	return file_sketch_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *ASketchFilterEntry) GetItem() *NumericValue {
@@ -877,7 +885,7 @@ type CountMin struct {
 
 func (x *CountMin) Reset() {
 	*x = CountMin{}
-	mi := &file_proto_sketch_proto_msgTypes[16]
+	mi := &file_sketch_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -889,7 +897,7 @@ func (x *CountMin) String() string {
 func (*CountMin) ProtoMessage() {}
 
 func (x *CountMin) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_sketch_proto_msgTypes[16]
+	mi := &file_sketch_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -902,7 +910,7 @@ func (x *CountMin) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CountMin.ProtoReflect.Descriptor instead.
 func (*CountMin) Descriptor() ([]byte, []int) {
-	return file_proto_sketch_proto_rawDescGZIP(), []int{16}
+	return file_sketch_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *CountMin) GetRows() []*IntRow {
@@ -919,11 +927,255 @@ func (x *CountMin) GetSeeds() []uint32 {
 	return nil
 }
 
-var File_proto_sketch_proto protoreflect.FileDescriptor
+type TopKRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	K             uint32                 `protobuf:"varint,1,opt,name=k,proto3" json:"k,omitempty"`
+	Type          string                 `protobuf:"bytes,2,opt,name=type,proto3" json:"type,omitempty"`
+	Field         string                 `protobuf:"bytes,3,opt,name=field,proto3" json:"field,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
 
-const file_proto_sketch_proto_rawDesc = "" +
+func (x *TopKRequest) Reset() {
+	*x = TopKRequest{}
+	mi := &file_sketch_proto_msgTypes[17]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKRequest) ProtoMessage() {}
+
+func (x *TopKRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[17]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKRequest.ProtoReflect.Descriptor instead.
+func (*TopKRequest) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{17}
+}
+
+func (x *TopKRequest) GetK() uint32 {
+	if x != nil {
+		return x.K
+	}
+	return 0
+}
+
+func (x *TopKRequest) GetType() string {
+	if x != nil {
+		return x.Type
+	}
+	return ""
+}
+
+func (x *TopKRequest) GetField() string {
+	if x != nil {
+		return x.Field
+	}
+	return ""
+}
+
+type TopKEntry struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Key           *NumericValue          `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
+	EstFreq       int64                  `protobuf:"varint,2,opt,name=est_freq,json=estFreq,proto3" json:"est_freq,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TopKEntry) Reset() {
+	*x = TopKEntry{}
+	mi := &file_sketch_proto_msgTypes[18]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKEntry) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKEntry) ProtoMessage() {}
+
+func (x *TopKEntry) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[18]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKEntry.ProtoReflect.Descriptor instead.
+func (*TopKEntry) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{18}
+}
+
+func (x *TopKEntry) GetKey() *NumericValue {
+	if x != nil {
+		return x.Key
+	}
+	return nil
+}
+
+func (x *TopKEntry) GetEstFreq() int64 {
+	if x != nil {
+		return x.EstFreq
+	}
+	return 0
+}
+
+type TopKReply struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Entries       []*TopKEntry           `protobuf:"bytes,1,rep,name=entries,proto3" json:"entries,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TopKReply) Reset() {
+	*x = TopKReply{}
+	mi := &file_sketch_proto_msgTypes[19]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKReply) ProtoMessage() {}
+
+func (x *TopKReply) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[19]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKReply.ProtoReflect.Descriptor instead.
+func (*TopKReply) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{19}
+}
+
+func (x *TopKReply) GetEntries() []*TopKEntry {
+	if x != nil {
+		return x.Entries
+	}
+	return nil
+}
+
+type DumpFilterRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Type          string                 `protobuf:"bytes,1,opt,name=type,proto3" json:"type,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *DumpFilterRequest) Reset() {
+	*x = DumpFilterRequest{}
+	mi := &file_sketch_proto_msgTypes[20]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DumpFilterRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DumpFilterRequest) ProtoMessage() {}
+
+func (x *DumpFilterRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[20]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DumpFilterRequest.ProtoReflect.Descriptor instead.
+func (*DumpFilterRequest) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{20}
+}
+
+func (x *DumpFilterRequest) GetType() string {
+	if x != nil {
+		return x.Type
+	}
+	return ""
+}
+
+type DumpFilterReply struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Entries       []*ASketchFilterEntry  `protobuf:"bytes,1,rep,name=entries,proto3" json:"entries,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *DumpFilterReply) Reset() {
+	*x = DumpFilterReply{}
+	mi := &file_sketch_proto_msgTypes[21]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DumpFilterReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DumpFilterReply) ProtoMessage() {}
+
+func (x *DumpFilterReply) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[21]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DumpFilterReply.ProtoReflect.Descriptor instead.
+func (*DumpFilterReply) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{21}
+}
+
+func (x *DumpFilterReply) GetEntries() []*ASketchFilterEntry {
+	if x != nil {
+		return x.Entries
+	}
+	return nil
+}
+
+var File_sketch_proto protoreflect.FileDescriptor
+
+const file_sketch_proto_rawDesc = "" +
 	"\n" +
-	"\x12proto/sketch.proto\x12\x05proto\"Z\n" +
+	"\fsketch.proto\x12\x05proto\"Z\n" +
 	"\vCountSketch\x12!\n" +
 	"\x04rows\x18\x01 \x03(\v2\r.proto.IntRowR\x04rows\x12\x14\n" +
 	"\x05seeds\x18\x02 \x03(\rR\x05seeds\x12\x12\n" +
@@ -964,18 +1216,32 @@ const file_proto_sketch_proto_rawDesc = "" +
 	"\x03pmf\x18\x02 \x03(\x01R\x03pmf\"\x0e\n" +
 	"\fEmptyMessage\"(\n" +
 	"\x0eRestartMessage\x12\x16\n" +
-	"\x06numMsg\x18\x01 \x01(\x03R\x06numMsg\"~\n" +
+	"\x06numMsg\x18\x01 \x01(\x03R\x06numMsg\"\x94\x01\n" +
 	"\aASketch\x121\n" +
 	"\x06filter\x18\x01 \x03(\v2\x19.proto.ASketchFilterEntryR\x06filter\x12,\n" +
 	"\tcount_min\x18\x02 \x01(\v2\x0f.proto.CountMinR\bcountMin\x12\x12\n" +
-	"\x04type\x18\x03 \x01(\tR\x04type\"a\n" +
+	"\x04type\x18\x03 \x01(\tR\x04type\x12\x14\n" +
+	"\x05field\x18\x04 \x01(\tR\x05field\"a\n" +
 	"\x12ASketchFilterEntry\x12'\n" +
 	"\x04item\x18\x01 \x01(\v2\x13.proto.NumericValueR\x04item\x12\x10\n" +
 	"\x03old\x18\x02 \x01(\x03R\x03old\x12\x10\n" +
 	"\x03new\x18\x03 \x01(\x03R\x03new\"C\n" +
 	"\bCountMin\x12!\n" +
 	"\x04rows\x18\x01 \x03(\v2\r.proto.IntRowR\x04rows\x12\x14\n" +
-	"\x05seeds\x18\x02 \x03(\rR\x05seeds2\xad\x05\n" +
+	"\x05seeds\x18\x02 \x03(\rR\x05seeds\"E\n" +
+	"\vTopKRequest\x12\f\n" +
+	"\x01k\x18\x01 \x01(\rR\x01k\x12\x12\n" +
+	"\x04type\x18\x02 \x01(\tR\x04type\x12\x14\n" +
+	"\x05field\x18\x03 \x01(\tR\x05field\"M\n" +
+	"\tTopKEntry\x12%\n" +
+	"\x03key\x18\x01 \x01(\v2\x13.proto.NumericValueR\x03key\x12\x19\n" +
+	"\best_freq\x18\x02 \x01(\x03R\aestFreq\"7\n" +
+	"\tTopKReply\x12*\n" +
+	"\aentries\x18\x01 \x03(\v2\x10.proto.TopKEntryR\aentries\"'\n" +
+	"\x11DumpFilterRequest\x12\x12\n" +
+	"\x04type\x18\x01 \x01(\tR\x04type\"F\n" +
+	"\x0fDumpFilterReply\x123\n" +
+	"\aentries\x18\x01 \x03(\v2\x19.proto.ASketchFilterEntryR\aentries2\xa2\x06\n" +
 	"\bSketcher\x121\n" +
 	"\bMergeKll\x12\x10.proto.KLLSketch\x1a\x11.proto.MergeReply\"\x00\x125\n" +
 	"\bQueryKll\x12\x13.proto.NumericValue\x1a\x12.proto.QueryReturn\"\x00\x12=\n" +
@@ -990,22 +1256,25 @@ const file_proto_sketch_proto_rawDesc = "" +
 	"\bBadCount\x12\x0f.proto.BadArray\x1a\x11.proto.MergeReply\"\x00\x123\n" +
 	"\fMergeASketch\x12\x0e.proto.ASketch\x1a\x11.proto.MergeReply\"\x00\x12=\n" +
 	"\fQueryASketch\x12\x13.proto.NumericValue\x1a\x16.proto.CountQueryReply\"\x00\x12=\n" +
-	"\rRestartServer\x12\x15.proto.RestartMessage\x1a\x13.proto.EmptyMessage\"\x00B/Z-github.com/bruhng/distributed-sketching/protob\x06proto3"
+	"\rRestartServer\x12\x15.proto.RestartMessage\x1a\x13.proto.EmptyMessage\"\x00\x123\n" +
+	"\vTopKASketch\x12\x12.proto.TopKRequest\x1a\x10.proto.TopKReply\x12>\n" +
+	"\n" +
+	"DumpFilter\x12\x18.proto.DumpFilterRequest\x1a\x16.proto.DumpFilterReplyB/Z-github.com/bruhng/distributed-sketching/protob\x06proto3"
 
 var (
-	file_proto_sketch_proto_rawDescOnce sync.Once
-	file_proto_sketch_proto_rawDescData []byte
+	file_sketch_proto_rawDescOnce sync.Once
+	file_sketch_proto_rawDescData []byte
 )
 
-func file_proto_sketch_proto_rawDescGZIP() []byte {
-	file_proto_sketch_proto_rawDescOnce.Do(func() {
-		file_proto_sketch_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_sketch_proto_rawDesc), len(file_proto_sketch_proto_rawDesc)))
+func file_sketch_proto_rawDescGZIP() []byte {
+	file_sketch_proto_rawDescOnce.Do(func() {
+		file_sketch_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_sketch_proto_rawDesc), len(file_sketch_proto_rawDesc)))
 	})
-	return file_proto_sketch_proto_rawDescData
+	return file_sketch_proto_rawDescData
 }
 
-var file_proto_sketch_proto_msgTypes = make([]protoimpl.MessageInfo, 17)
-var file_proto_sketch_proto_goTypes = []any{
+var file_sketch_proto_msgTypes = make([]protoimpl.MessageInfo, 22)
+var file_sketch_proto_goTypes = []any{
 	(*CountSketch)(nil),        // 0: proto.CountSketch
 	(*IntRow)(nil),             // 1: proto.IntRow
 	(*CountQueryReply)(nil),    // 2: proto.CountQueryReply
@@ -1023,8 +1292,13 @@ var file_proto_sketch_proto_goTypes = []any{
 	(*ASketch)(nil),            // 14: proto.ASketch
 	(*ASketchFilterEntry)(nil), // 15: proto.ASketchFilterEntry
 	(*CountMin)(nil),           // 16: proto.CountMin
+	(*TopKRequest)(nil),        // 17: proto.TopKRequest
+	(*TopKEntry)(nil),          // 18: proto.TopKEntry
+	(*TopKReply)(nil),          // 19: proto.TopKReply
+	(*DumpFilterRequest)(nil),  // 20: proto.DumpFilterRequest
+	(*DumpFilterReply)(nil),    // 21: proto.DumpFilterReply
 }
-var file_proto_sketch_proto_depIdxs = []int32{
+var file_sketch_proto_depIdxs = []int32{
 	1,  // 0: proto.CountSketch.rows:type_name -> proto.IntRow
 	5,  // 1: proto.KLLSketch.rows:type_name -> proto.NumericRow
 	5,  // 2: proto.BadArray.arr:type_name -> proto.NumericRow
@@ -1033,43 +1307,50 @@ var file_proto_sketch_proto_depIdxs = []int32{
 	16, // 5: proto.ASketch.count_min:type_name -> proto.CountMin
 	6,  // 6: proto.ASketchFilterEntry.item:type_name -> proto.NumericValue
 	1,  // 7: proto.CountMin.rows:type_name -> proto.IntRow
-	3,  // 8: proto.Sketcher.MergeKll:input_type -> proto.KLLSketch
-	6,  // 9: proto.Sketcher.QueryKll:input_type -> proto.NumericValue
-	7,  // 10: proto.Sketcher.ReverseQueryKll:input_type -> proto.ReverseQuery
-	10, // 11: proto.Sketcher.PlotKll:input_type -> proto.PlotRequest
-	0,  // 12: proto.Sketcher.MergeCount:input_type -> proto.CountSketch
-	6,  // 13: proto.Sketcher.QueryCount:input_type -> proto.NumericValue
-	12, // 14: proto.Sketcher.TestLatency:input_type -> proto.EmptyMessage
-	4,  // 15: proto.Sketcher.BadKll:input_type -> proto.BadArray
-	4,  // 16: proto.Sketcher.BadCount:input_type -> proto.BadArray
-	14, // 17: proto.Sketcher.MergeASketch:input_type -> proto.ASketch
-	6,  // 18: proto.Sketcher.QueryASketch:input_type -> proto.NumericValue
-	13, // 19: proto.Sketcher.RestartServer:input_type -> proto.RestartMessage
-	9,  // 20: proto.Sketcher.MergeKll:output_type -> proto.MergeReply
-	8,  // 21: proto.Sketcher.QueryKll:output_type -> proto.QueryReturn
-	6,  // 22: proto.Sketcher.ReverseQueryKll:output_type -> proto.NumericValue
-	11, // 23: proto.Sketcher.PlotKll:output_type -> proto.PlotKllReply
-	9,  // 24: proto.Sketcher.MergeCount:output_type -> proto.MergeReply
-	2,  // 25: proto.Sketcher.QueryCount:output_type -> proto.CountQueryReply
-	12, // 26: proto.Sketcher.TestLatency:output_type -> proto.EmptyMessage
-	9,  // 27: proto.Sketcher.BadKll:output_type -> proto.MergeReply
-	9,  // 28: proto.Sketcher.BadCount:output_type -> proto.MergeReply
-	9,  // 29: proto.Sketcher.MergeASketch:output_type -> proto.MergeReply
-	2,  // 30: proto.Sketcher.QueryASketch:output_type -> proto.CountQueryReply
-	12, // 31: proto.Sketcher.RestartServer:output_type -> proto.EmptyMessage
-	20, // [20:32] is the sub-list for method output_type
-	8,  // [8:20] is the sub-list for method input_type
-	8,  // [8:8] is the sub-list for extension type_name
-	8,  // [8:8] is the sub-list for extension extendee
-	0,  // [0:8] is the sub-list for field type_name
+	6,  // 8: proto.TopKEntry.key:type_name -> proto.NumericValue
+	18, // 9: proto.TopKReply.entries:type_name -> proto.TopKEntry
+	15, // 10: proto.DumpFilterReply.entries:type_name -> proto.ASketchFilterEntry
+	3,  // 11: proto.Sketcher.MergeKll:input_type -> proto.KLLSketch
+	6,  // 12: proto.Sketcher.QueryKll:input_type -> proto.NumericValue
+	7,  // 13: proto.Sketcher.ReverseQueryKll:input_type -> proto.ReverseQuery
+	10, // 14: proto.Sketcher.PlotKll:input_type -> proto.PlotRequest
+	0,  // 15: proto.Sketcher.MergeCount:input_type -> proto.CountSketch
+	6,  // 16: proto.Sketcher.QueryCount:input_type -> proto.NumericValue
+	12, // 17: proto.Sketcher.TestLatency:input_type -> proto.EmptyMessage
+	4,  // 18: proto.Sketcher.BadKll:input_type -> proto.BadArray
+	4,  // 19: proto.Sketcher.BadCount:input_type -> proto.BadArray
+	14, // 20: proto.Sketcher.MergeASketch:input_type -> proto.ASketch
+	6,  // 21: proto.Sketcher.QueryASketch:input_type -> proto.NumericValue
+	13, // 22: proto.Sketcher.RestartServer:input_type -> proto.RestartMessage
+	17, // 23: proto.Sketcher.TopKASketch:input_type -> proto.TopKRequest
+	20, // 24: proto.Sketcher.DumpFilter:input_type -> proto.DumpFilterRequest
+	9,  // 25: proto.Sketcher.MergeKll:output_type -> proto.MergeReply
+	8,  // 26: proto.Sketcher.QueryKll:output_type -> proto.QueryReturn
+	6,  // 27: proto.Sketcher.ReverseQueryKll:output_type -> proto.NumericValue
+	11, // 28: proto.Sketcher.PlotKll:output_type -> proto.PlotKllReply
+	9,  // 29: proto.Sketcher.MergeCount:output_type -> proto.MergeReply
+	2,  // 30: proto.Sketcher.QueryCount:output_type -> proto.CountQueryReply
+	12, // 31: proto.Sketcher.TestLatency:output_type -> proto.EmptyMessage
+	9,  // 32: proto.Sketcher.BadKll:output_type -> proto.MergeReply
+	9,  // 33: proto.Sketcher.BadCount:output_type -> proto.MergeReply
+	9,  // 34: proto.Sketcher.MergeASketch:output_type -> proto.MergeReply
+	2,  // 35: proto.Sketcher.QueryASketch:output_type -> proto.CountQueryReply
+	12, // 36: proto.Sketcher.RestartServer:output_type -> proto.EmptyMessage
+	19, // 37: proto.Sketcher.TopKASketch:output_type -> proto.TopKReply
+	21, // 38: proto.Sketcher.DumpFilter:output_type -> proto.DumpFilterReply
+	25, // [25:39] is the sub-list for method output_type
+	11, // [11:25] is the sub-list for method input_type
+	11, // [11:11] is the sub-list for extension type_name
+	11, // [11:11] is the sub-list for extension extendee
+	0,  // [0:11] is the sub-list for field type_name
 }
 
-func init() { file_proto_sketch_proto_init() }
-func file_proto_sketch_proto_init() {
-	if File_proto_sketch_proto != nil {
+func init() { file_sketch_proto_init() }
+func file_sketch_proto_init() {
+	if File_sketch_proto != nil {
 		return
 	}
-	file_proto_sketch_proto_msgTypes[6].OneofWrappers = []any{
+	file_sketch_proto_msgTypes[6].OneofWrappers = []any{
 		(*NumericValue_IntVal)(nil),
 		(*NumericValue_FloatVal)(nil),
 	}
@@ -1077,17 +1358,17 @@ func file_proto_sketch_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_sketch_proto_rawDesc), len(file_proto_sketch_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_sketch_proto_rawDesc), len(file_sketch_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   17,
+			NumMessages:   22,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_proto_sketch_proto_goTypes,
-		DependencyIndexes: file_proto_sketch_proto_depIdxs,
-		MessageInfos:      file_proto_sketch_proto_msgTypes,
+		GoTypes:           file_sketch_proto_goTypes,
+		DependencyIndexes: file_sketch_proto_depIdxs,
+		MessageInfos:      file_sketch_proto_msgTypes,
 	}.Build()
-	File_proto_sketch_proto = out.File
-	file_proto_sketch_proto_goTypes = nil
-	file_proto_sketch_proto_depIdxs = nil
+	File_sketch_proto = out.File
+	file_sketch_proto_goTypes = nil
+	file_sketch_proto_depIdxs = nil
 }
