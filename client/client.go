@@ -17,8 +17,8 @@ var MAX_RECONN_ATTEMPTS int = 20
 
 func Init[T shared.Number](port string, adr string, sketchType string, dataSetPath string, headerName string, numStreamRuns int, streamDelayms int, mergeAfter int) {
 	fmt.Printf("[debug] T = %T\n", *new(T))
-
 	dataStream := *stream.NewStreamFromCsv[T](dataSetPath, headerName, streamDelayms, numStreamRuns)
+
 	switch sketchType {
 	case "kll":
 		KllClient(100, mergeAfter, dataStream, adr+":"+port, startRealConnection)
@@ -30,6 +30,8 @@ func Init[T shared.Number](port string, adr string, sketchType string, dataSetPa
 		BadCountClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	case "badKll":
 		BadKllClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
+	case "streamClient":
+		StreamClient(mergeAfter, dataStream, adr+":"+port, startRealConnection)
 	default:
 		panic("No sketch provided or invalid sketch")
 	}
@@ -104,4 +106,5 @@ func MakeRequest[T any](protoSketch *T, addr string, merge mergeFunction[T], con
 
 	}
 	*attempt = 0
+	fmt.Printf("Successfully sent sketch to server at %s\n", addr)
 }
