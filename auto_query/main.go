@@ -54,7 +54,7 @@ func main() {
 		interval = flag.Duration("interval", 0, "interval between queries (e.g. 50ms); 0 = as fast as possible")
 		timeout  = flag.Duration("timeout", 5*time.Second, "per-request timeout")
 		out      = flag.String("out", "asketch_queries.csv", "output CSV path")
-		api      = flag.String("api", "ASketch", "which API to call: ASketch|count")
+		api      = flag.String("api", "asketch", "which API to call: asketch|count")
 		warmup   = flag.Int("warmup", 5, "warmup queries (not recorded)")
 	)
 	flag.Parse()

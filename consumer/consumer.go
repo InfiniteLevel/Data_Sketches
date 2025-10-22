@@ -231,7 +231,7 @@ func Init(port string, adr string) {
 			fmt.Println("Returns quantlie of value [int/float]\n")
 
 			fmt.Println("QueryASketch x")
-			fmt.Println("Returns frequency count of value [int/float] from ASketch\n")
+			fmt.Println("Returns frequency count of value [int/float] from asketch\n")
 
 			fmt.Println("PlotKll [int] [string]")
 			fmt.Println("Returns a histogram with [int] buckets of sketch of type [string]\n")

@@ -26,7 +26,7 @@ func getOrCreateASketchState[T shared.Number]() *asketch.ASketch[T] {
 	return actual.(*asketch.ASketch[T])
 }
 
-// Convert protobuf ASketch to internal ASketch
+// Convert protobuf asketch to internal asketch
 func convertProtoASToAS[T shared.Number](protoData *pb.ASketch) *asketch.ASketch[T] {
 	var filter []asketch.FilterSlot[T]
 	var rows [][]int
@@ -67,7 +67,7 @@ func convertProtoASToAS[T shared.Number](protoData *pb.ASketch) *asketch.ASketch
 	return asketch.NewASketchFromState(filter, rows, seeds)
 }
 
-// Merge the incoming ASketch into the server's ASketch state
+// Merge the incoming asketch into the server's asketch state
 func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply, error) {
 	switch in.Type {
 	case "int":
@@ -89,7 +89,7 @@ func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply
 	return &pb.MergeReply{Status: 0}, nil
 }
 
-// Query the ASketch state for the given value
+// Query the asketch state for the given value
 func (s *Server) QueryASketch(_ context.Context, in *pb.NumericValue) (*pb.CountQueryReply, error) {
 	switch in.Type {
 	case "int":

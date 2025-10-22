@@ -781,7 +781,7 @@ func (x *ASketch) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ASketch.ProtoReflect.Descriptor instead.
+// Deprecated: Use asketch.ProtoReflect.Descriptor instead.
 func (*ASketch) Descriptor() ([]byte, []int) {
 	return file_proto_sketch_proto_rawDescGZIP(), []int{14}
 }
@@ -965,7 +965,7 @@ const file_proto_sketch_proto_rawDesc = "" +
 	"\fEmptyMessage\"(\n" +
 	"\x0eRestartMessage\x12\x16\n" +
 	"\x06numMsg\x18\x01 \x01(\x03R\x06numMsg\"~\n" +
-	"\aASketch\x121\n" +
+	"\aasketch\x121\n" +
 	"\x06filter\x18\x01 \x03(\v2\x19.proto.ASketchFilterEntryR\x06filter\x12,\n" +
 	"\tcount_min\x18\x02 \x01(\v2\x0f.proto.CountMinR\bcountMin\x12\x12\n" +
 	"\x04type\x18\x03 \x01(\tR\x04type\"a\n" +
@@ -988,7 +988,7 @@ const file_proto_sketch_proto_rawDesc = "" +
 	"\vTestLatency\x12\x13.proto.EmptyMessage\x1a\x13.proto.EmptyMessage\"\x00\x12.\n" +
 	"\x06BadKll\x12\x0f.proto.BadArray\x1a\x11.proto.MergeReply\"\x00\x120\n" +
 	"\bBadCount\x12\x0f.proto.BadArray\x1a\x11.proto.MergeReply\"\x00\x123\n" +
-	"\fMergeASketch\x12\x0e.proto.ASketch\x1a\x11.proto.MergeReply\"\x00\x12=\n" +
+	"\fMergeASketch\x12\x0e.proto.asketch\x1a\x11.proto.MergeReply\"\x00\x12=\n" +
 	"\fQueryASketch\x12\x13.proto.NumericValue\x1a\x16.proto.CountQueryReply\"\x00\x12=\n" +
 	"\rRestartServer\x12\x15.proto.RestartMessage\x1a\x13.proto.EmptyMessage\"\x00B/Z-github.com/bruhng/distributed-sketching/protob\x06proto3"
 
@@ -1020,7 +1020,7 @@ var file_proto_sketch_proto_goTypes = []any{
 	(*PlotKllReply)(nil),       // 11: proto.PlotKllReply
 	(*EmptyMessage)(nil),       // 12: proto.EmptyMessage
 	(*RestartMessage)(nil),     // 13: proto.RestartMessage
-	(*ASketch)(nil),            // 14: proto.ASketch
+	(*ASketch)(nil),            // 14: proto.asketch
 	(*ASketchFilterEntry)(nil), // 15: proto.ASketchFilterEntry
 	(*CountMin)(nil),           // 16: proto.CountMin
 }
@@ -1029,8 +1029,8 @@ var file_proto_sketch_proto_depIdxs = []int32{
 	5,  // 1: proto.KLLSketch.rows:type_name -> proto.NumericRow
 	5,  // 2: proto.BadArray.arr:type_name -> proto.NumericRow
 	6,  // 3: proto.NumericRow.values:type_name -> proto.NumericValue
-	15, // 4: proto.ASketch.filter:type_name -> proto.ASketchFilterEntry
-	16, // 5: proto.ASketch.count_min:type_name -> proto.CountMin
+	15, // 4: proto.asketch.filter:type_name -> proto.ASketchFilterEntry
+	16, // 5: proto.asketch.count_min:type_name -> proto.CountMin
 	6,  // 6: proto.ASketchFilterEntry.item:type_name -> proto.NumericValue
 	1,  // 7: proto.CountMin.rows:type_name -> proto.IntRow
 	3,  // 8: proto.Sketcher.MergeKll:input_type -> proto.KLLSketch
@@ -1042,7 +1042,7 @@ var file_proto_sketch_proto_depIdxs = []int32{
 	12, // 14: proto.Sketcher.TestLatency:input_type -> proto.EmptyMessage
 	4,  // 15: proto.Sketcher.BadKll:input_type -> proto.BadArray
 	4,  // 16: proto.Sketcher.BadCount:input_type -> proto.BadArray
-	14, // 17: proto.Sketcher.MergeASketch:input_type -> proto.ASketch
+	14, // 17: proto.Sketcher.MergeASketch:input_type -> proto.asketch
 	6,  // 18: proto.Sketcher.QueryASketch:input_type -> proto.NumericValue
 	13, // 19: proto.Sketcher.RestartServer:input_type -> proto.RestartMessage
 	9,  // 20: proto.Sketcher.MergeKll:output_type -> proto.MergeReply

@@ -24,7 +24,7 @@ type FilterSlot[T shared.Number] struct {
 
 func NewASketch[T shared.Number](seed int64, width uint64, depth int, m int) *ASketch[T] {
 	if m <= 0 {
-		panic("ASketch requires m > 0")
+		panic("asketch requires m > 0")
 	}
 	f := make([]aCount[T], m)
 	for i := range f {

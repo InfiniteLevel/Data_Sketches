@@ -6,7 +6,7 @@ type Number interface {
 	constraints.Integer | constraints.Float
 }
 
-// ASketch constants
+// asketch constants
 const (
 	ASketchSeed  int64  = 157
 	ASketchWidth uint64 = 2048
