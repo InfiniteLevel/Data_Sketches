@@ -124,10 +124,7 @@ func (a *ASketch[T]) Merge(other *ASketch[T]) {
 		if slot.new < 0 {
 			continue
 		}
-		delta := slot.new - slot.old
-		if delta > 0 {
-			a.AddBy(slot.it, delta)
-		}
+		a.AddBy(slot.it, slot.new)
 	}
 }
 

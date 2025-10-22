@@ -68,7 +68,7 @@ func convertProtoASToAS[T shared.Number](protoData *pb.ASketch) *asketch.ASketch
 
 // Merge the incoming ASketch into the server's ASketch state
 func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply, error) {
-	fld := in.GetField()
+	fld := ""
 	fmt.Printf("[SERVER] MergeASketch type=%s filter=%d rows=%d\n", in.GetType(), len(in.GetFilter()), len(in.GetCountMin().GetRows()))
 	switch in.Type {
 	case "int":
@@ -119,7 +119,7 @@ func (s *Server) QueryASketch(_ context.Context, in *pb.NumericValue) (*pb.Count
 	}
 }
 func (s *Server) TopKASketch(_ context.Context, in *pb.TopKRequest) (*pb.TopKReply, error) {
-	fld := in.GetField()
+	fld := ""
 
 	switch in.GetType() {
 	case "int":
