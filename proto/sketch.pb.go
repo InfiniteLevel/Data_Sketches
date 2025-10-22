@@ -7,12 +7,11 @@
 package proto
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -980,6 +979,250 @@ func (x *CountMin) GetSeeds() []uint32 {
 	return nil
 }
 
+type TopKRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	K             uint32                 `protobuf:"varint,1,opt,name=k,proto3" json:"k,omitempty"`
+	Type          string                 `protobuf:"bytes,2,opt,name=type,proto3" json:"type,omitempty"`
+	Field         string                 `protobuf:"bytes,3,opt,name=field,proto3" json:"field,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TopKRequest) Reset() {
+	*x = TopKRequest{}
+	mi := &file_sketch_proto_msgTypes[18]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKRequest) ProtoMessage() {}
+
+func (x *TopKRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[18]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKRequest.ProtoReflect.Descriptor instead.
+func (*TopKRequest) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{18}
+}
+
+func (x *TopKRequest) GetK() uint32 {
+	if x != nil {
+		return x.K
+	}
+	return 0
+}
+
+func (x *TopKRequest) GetType() string {
+	if x != nil {
+		return x.Type
+	}
+	return ""
+}
+
+func (x *TopKRequest) GetField() string {
+	if x != nil {
+		return x.Field
+	}
+	return ""
+}
+
+type TopKEntry struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Key           *NumericValue          `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
+	EstFreq       int64                  `protobuf:"varint,2,opt,name=est_freq,json=estFreq,proto3" json:"est_freq,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TopKEntry) Reset() {
+	*x = TopKEntry{}
+	mi := &file_sketch_proto_msgTypes[19]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKEntry) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKEntry) ProtoMessage() {}
+
+func (x *TopKEntry) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[19]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKEntry.ProtoReflect.Descriptor instead.
+func (*TopKEntry) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{19}
+}
+
+func (x *TopKEntry) GetKey() *NumericValue {
+	if x != nil {
+		return x.Key
+	}
+	return nil
+}
+
+func (x *TopKEntry) GetEstFreq() int64 {
+	if x != nil {
+		return x.EstFreq
+	}
+	return 0
+}
+
+type TopKReply struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Entries       []*TopKEntry           `protobuf:"bytes,1,rep,name=entries,proto3" json:"entries,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TopKReply) Reset() {
+	*x = TopKReply{}
+	mi := &file_sketch_proto_msgTypes[20]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TopKReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TopKReply) ProtoMessage() {}
+
+func (x *TopKReply) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[20]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TopKReply.ProtoReflect.Descriptor instead.
+func (*TopKReply) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{20}
+}
+
+func (x *TopKReply) GetEntries() []*TopKEntry {
+	if x != nil {
+		return x.Entries
+	}
+	return nil
+}
+
+type DumpFilterRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Type          string                 `protobuf:"bytes,1,opt,name=type,proto3" json:"type,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *DumpFilterRequest) Reset() {
+	*x = DumpFilterRequest{}
+	mi := &file_sketch_proto_msgTypes[21]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DumpFilterRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DumpFilterRequest) ProtoMessage() {}
+
+func (x *DumpFilterRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[21]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DumpFilterRequest.ProtoReflect.Descriptor instead.
+func (*DumpFilterRequest) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{21}
+}
+
+func (x *DumpFilterRequest) GetType() string {
+	if x != nil {
+		return x.Type
+	}
+	return ""
+}
+
+type DumpFilterReply struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Entries       []*ASketchFilterEntry  `protobuf:"bytes,1,rep,name=entries,proto3" json:"entries,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *DumpFilterReply) Reset() {
+	*x = DumpFilterReply{}
+	mi := &file_sketch_proto_msgTypes[22]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DumpFilterReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DumpFilterReply) ProtoMessage() {}
+
+func (x *DumpFilterReply) ProtoReflect() protoreflect.Message {
+	mi := &file_sketch_proto_msgTypes[22]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DumpFilterReply.ProtoReflect.Descriptor instead.
+func (*DumpFilterReply) Descriptor() ([]byte, []int) {
+	return file_sketch_proto_rawDescGZIP(), []int{22}
+}
+
+func (x *DumpFilterReply) GetEntries() []*ASketchFilterEntry {
+	if x != nil {
+		return x.Entries
+	}
+	return nil
+}
+
 var File_sketch_proto protoreflect.FileDescriptor
 
 const file_sketch_proto_rawDesc = "" +
@@ -1040,7 +1283,20 @@ const file_sketch_proto_rawDesc = "" +
 	"\x04type\x18\x02 \x01(\tR\x04type\"C\n" +
 	"\bCountMin\x12!\n" +
 	"\x04rows\x18\x01 \x03(\v2\r.proto.IntRowR\x04rows\x12\x14\n" +
-	"\x05seeds\x18\x02 \x03(\rR\x05seeds2\xea\x05\n" +
+	"\x05seeds\x18\x02 \x03(\rR\x05seeds\"E\n" +
+	"\vTopKRequest\x12\f\n" +
+	"\x01k\x18\x01 \x01(\rR\x01k\x12\x12\n" +
+	"\x04type\x18\x02 \x01(\tR\x04type\x12\x14\n" +
+	"\x05field\x18\x03 \x01(\tR\x05field\"M\n" +
+	"\tTopKEntry\x12%\n" +
+	"\x03key\x18\x01 \x01(\v2\x13.proto.NumericValueR\x03key\x12\x19\n" +
+	"\best_freq\x18\x02 \x01(\x03R\aestFreq\"7\n" +
+	"\tTopKReply\x12*\n" +
+	"\aentries\x18\x01 \x03(\v2\x10.proto.TopKEntryR\aentries\"'\n" +
+	"\x11DumpFilterRequest\x12\x12\n" +
+	"\x04type\x18\x01 \x01(\tR\x04type\"F\n" +
+	"\x0fDumpFilterReply\x123\n" +
+	"\aentries\x18\x01 \x03(\v2\x19.proto.ASketchFilterEntryR\aentries2\xdf\x06\n" +
 	"\bSketcher\x121\n" +
 	"\bMergeKll\x12\x10.proto.KLLSketch\x1a\x11.proto.MergeReply\"\x00\x125\n" +
 	"\bQueryKll\x12\x13.proto.NumericValue\x1a\x12.proto.QueryReturn\"\x00\x12=\n" +
@@ -1055,7 +1311,10 @@ const file_sketch_proto_rawDesc = "" +
 	"\bBadCount\x12\x0f.proto.BadArray\x1a\x11.proto.MergeReply\"\x00\x123\n" +
 	"\fMergeASketch\x12\x0e.proto.ASketch\x1a\x11.proto.MergeReply\"\x00\x12=\n" +
 	"\fQueryASketch\x12\x13.proto.NumericValue\x1a\x16.proto.CountQueryReply\"\x00\x12=\n" +
-	"\rRestartServer\x12\x15.proto.RestartMessage\x1a\x13.proto.EmptyMessage\"\x00\x12;\n" +
+	"\rRestartServer\x12\x15.proto.RestartMessage\x1a\x13.proto.EmptyMessage\"\x00\x123\n" +
+	"\vTopKASketch\x12\x12.proto.TopKRequest\x1a\x10.proto.TopKReply\x12>\n" +
+	"\n" +
+	"DumpFilter\x12\x18.proto.DumpFilterRequest\x1a\x16.proto.DumpFilterReply\x12;\n" +
 	"\x13MergeBufIntoASketch\x12\x0f.proto.BufBatch\x1a\x11.proto.MergeReply\"\x00B/Z-github.com/bruhng/distributed-sketching/protob\x06proto3"
 
 var (
@@ -1070,7 +1329,7 @@ func file_sketch_proto_rawDescGZIP() []byte {
 	return file_sketch_proto_rawDescData
 }
 
-var file_sketch_proto_msgTypes = make([]protoimpl.MessageInfo, 18)
+var file_sketch_proto_msgTypes = make([]protoimpl.MessageInfo, 23)
 var file_sketch_proto_goTypes = []any{
 	(*CountSketch)(nil),        // 0: proto.CountSketch
 	(*IntRow)(nil),             // 1: proto.IntRow
@@ -1090,6 +1349,11 @@ var file_sketch_proto_goTypes = []any{
 	(*ASketchFilterEntry)(nil), // 15: proto.ASketchFilterEntry
 	(*BufBatch)(nil),           // 16: proto.BufBatch
 	(*CountMin)(nil),           // 17: proto.CountMin
+	(*TopKRequest)(nil),        // 18: proto.TopKRequest
+	(*TopKEntry)(nil),          // 19: proto.TopKEntry
+	(*TopKReply)(nil),          // 20: proto.TopKReply
+	(*DumpFilterRequest)(nil),  // 21: proto.DumpFilterRequest
+	(*DumpFilterReply)(nil),    // 22: proto.DumpFilterReply
 }
 var file_sketch_proto_depIdxs = []int32{
 	1,  // 0: proto.CountSketch.rows:type_name -> proto.IntRow
@@ -1101,37 +1365,44 @@ var file_sketch_proto_depIdxs = []int32{
 	6,  // 6: proto.ASketchFilterEntry.item:type_name -> proto.NumericValue
 	6,  // 7: proto.BufBatch.items:type_name -> proto.NumericValue
 	1,  // 8: proto.CountMin.rows:type_name -> proto.IntRow
-	3,  // 9: proto.Sketcher.MergeKll:input_type -> proto.KLLSketch
-	6,  // 10: proto.Sketcher.QueryKll:input_type -> proto.NumericValue
-	7,  // 11: proto.Sketcher.ReverseQueryKll:input_type -> proto.ReverseQuery
-	10, // 12: proto.Sketcher.PlotKll:input_type -> proto.PlotRequest
-	0,  // 13: proto.Sketcher.MergeCount:input_type -> proto.CountSketch
-	6,  // 14: proto.Sketcher.QueryCount:input_type -> proto.NumericValue
-	12, // 15: proto.Sketcher.TestLatency:input_type -> proto.EmptyMessage
-	4,  // 16: proto.Sketcher.BadKll:input_type -> proto.BadArray
-	4,  // 17: proto.Sketcher.BadCount:input_type -> proto.BadArray
-	14, // 18: proto.Sketcher.MergeASketch:input_type -> proto.ASketch
-	6,  // 19: proto.Sketcher.QueryASketch:input_type -> proto.NumericValue
-	13, // 20: proto.Sketcher.RestartServer:input_type -> proto.RestartMessage
-	16, // 21: proto.Sketcher.MergeBufIntoASketch:input_type -> proto.BufBatch
-	9,  // 22: proto.Sketcher.MergeKll:output_type -> proto.MergeReply
-	8,  // 23: proto.Sketcher.QueryKll:output_type -> proto.QueryReturn
-	6,  // 24: proto.Sketcher.ReverseQueryKll:output_type -> proto.NumericValue
-	11, // 25: proto.Sketcher.PlotKll:output_type -> proto.PlotKllReply
-	9,  // 26: proto.Sketcher.MergeCount:output_type -> proto.MergeReply
-	2,  // 27: proto.Sketcher.QueryCount:output_type -> proto.CountQueryReply
-	12, // 28: proto.Sketcher.TestLatency:output_type -> proto.EmptyMessage
-	9,  // 29: proto.Sketcher.BadKll:output_type -> proto.MergeReply
-	9,  // 30: proto.Sketcher.BadCount:output_type -> proto.MergeReply
-	9,  // 31: proto.Sketcher.MergeASketch:output_type -> proto.MergeReply
-	2,  // 32: proto.Sketcher.QueryASketch:output_type -> proto.CountQueryReply
-	12, // 33: proto.Sketcher.RestartServer:output_type -> proto.EmptyMessage
-	9,  // 34: proto.Sketcher.MergeBufIntoASketch:output_type -> proto.MergeReply
-	22, // [22:35] is the sub-list for method output_type
-	9,  // [9:22] is the sub-list for method input_type
-	9,  // [9:9] is the sub-list for extension type_name
-	9,  // [9:9] is the sub-list for extension extendee
-	0,  // [0:9] is the sub-list for field type_name
+	6,  // 9: proto.TopKEntry.key:type_name -> proto.NumericValue
+	19, // 10: proto.TopKReply.entries:type_name -> proto.TopKEntry
+	15, // 11: proto.DumpFilterReply.entries:type_name -> proto.ASketchFilterEntry
+	3,  // 12: proto.Sketcher.MergeKll:input_type -> proto.KLLSketch
+	6,  // 13: proto.Sketcher.QueryKll:input_type -> proto.NumericValue
+	7,  // 14: proto.Sketcher.ReverseQueryKll:input_type -> proto.ReverseQuery
+	10, // 15: proto.Sketcher.PlotKll:input_type -> proto.PlotRequest
+	0,  // 16: proto.Sketcher.MergeCount:input_type -> proto.CountSketch
+	6,  // 17: proto.Sketcher.QueryCount:input_type -> proto.NumericValue
+	12, // 18: proto.Sketcher.TestLatency:input_type -> proto.EmptyMessage
+	4,  // 19: proto.Sketcher.BadKll:input_type -> proto.BadArray
+	4,  // 20: proto.Sketcher.BadCount:input_type -> proto.BadArray
+	14, // 21: proto.Sketcher.MergeASketch:input_type -> proto.ASketch
+	6,  // 22: proto.Sketcher.QueryASketch:input_type -> proto.NumericValue
+	13, // 23: proto.Sketcher.RestartServer:input_type -> proto.RestartMessage
+	18, // 24: proto.Sketcher.TopKASketch:input_type -> proto.TopKRequest
+	21, // 25: proto.Sketcher.DumpFilter:input_type -> proto.DumpFilterRequest
+	16, // 26: proto.Sketcher.MergeBufIntoASketch:input_type -> proto.BufBatch
+	9,  // 27: proto.Sketcher.MergeKll:output_type -> proto.MergeReply
+	8,  // 28: proto.Sketcher.QueryKll:output_type -> proto.QueryReturn
+	6,  // 29: proto.Sketcher.ReverseQueryKll:output_type -> proto.NumericValue
+	11, // 30: proto.Sketcher.PlotKll:output_type -> proto.PlotKllReply
+	9,  // 31: proto.Sketcher.MergeCount:output_type -> proto.MergeReply
+	2,  // 32: proto.Sketcher.QueryCount:output_type -> proto.CountQueryReply
+	12, // 33: proto.Sketcher.TestLatency:output_type -> proto.EmptyMessage
+	9,  // 34: proto.Sketcher.BadKll:output_type -> proto.MergeReply
+	9,  // 35: proto.Sketcher.BadCount:output_type -> proto.MergeReply
+	9,  // 36: proto.Sketcher.MergeASketch:output_type -> proto.MergeReply
+	2,  // 37: proto.Sketcher.QueryASketch:output_type -> proto.CountQueryReply
+	12, // 38: proto.Sketcher.RestartServer:output_type -> proto.EmptyMessage
+	20, // 39: proto.Sketcher.TopKASketch:output_type -> proto.TopKReply
+	22, // 40: proto.Sketcher.DumpFilter:output_type -> proto.DumpFilterReply
+	9,  // 41: proto.Sketcher.MergeBufIntoASketch:output_type -> proto.MergeReply
+	27, // [27:42] is the sub-list for method output_type
+	12, // [12:27] is the sub-list for method input_type
+	12, // [12:12] is the sub-list for extension type_name
+	12, // [12:12] is the sub-list for extension extendee
+	0,  // [0:12] is the sub-list for field type_name
 }
 
 func init() { file_sketch_proto_init() }
@@ -1149,7 +1420,7 @@ func file_sketch_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_sketch_proto_rawDesc), len(file_sketch_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   18,
+			NumMessages:   23,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
