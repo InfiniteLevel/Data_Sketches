@@ -24,9 +24,9 @@ func main() {
 	if *isClient {
 		switch *dataSetType {
 		case "float":
-			client.Init[float64](*port, *adress, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
+			client.Init[float64](*port, *address, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
 		case "int":
-			client.Init[int](*port, *adress, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
+			client.Init[int](*port, *address, *sketchType, *dataSetPath, *dataSetName, -1, *streamRate, *mergeRate)
 		}
 	} else if *isConsumer {
 		consumer.Init(*port, *address)
