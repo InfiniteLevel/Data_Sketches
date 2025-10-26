@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ASketch Server",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "args": [
+                "-port",
+                "8080"
+            ],
+            "env": {},
+            "showLog": true
+        },
+        {
+            "name": "Debug ASketch Client",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}",
+            "args": [
+                "-client",
+                "-d",
+                "./data/dataset_gps.csv",
+                "-sketch",
+                "streamClient",
+                "-merge",
+                "5",
+                "-stream",
+                "1000000000",
+                "-port",
+                "8080",
+                "-type",
+                "float",
+                "-name",
+                "vdop"
+            ],
+            "env": {},
+            "showLog": true
+        },
+        {
+            "name": "Debug ASketch Consumer",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}",
+            "args": [
+                "-consumer",
+                "-port",
+                "8080"
+            ],
+            "env": {},
+            "console": "integratedTerminal",
+        }
+    ]
+}

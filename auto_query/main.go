@@ -105,7 +105,7 @@ func runTopK(c pb.SketcherClient, typ, field string, k uint32, csvPath string, a
 func main() {
 	addr := flag.String("addr", "127.0.0.1:8080", "gRPC server address (host:port)")
 	typ := flag.String("type", "int", "value type: int|float64")
-	field := flag.String("field", "", "column/element name for which to compute Top-K")
+	field := flag.String("field", "", "event/signal name for which to compute Top-K")
 	k := flag.Uint("topk", 10, "K for Top-K")
 	csvPath := flag.String("out", "test.csv", "path to output CSV file")
 	watch := flag.Duration("watch", 0, "repeat every duration (e.g. 2s, 1m); 0 disables")

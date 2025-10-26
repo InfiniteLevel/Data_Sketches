@@ -102,7 +102,7 @@ func Init(port string, adr string) {
 				fmt.Println("ReverseQueryKll requires a float and a type")
 				continue
 			}
-			x, err := strconv.ParseFloat(words[1], 32)
+			x, err := strconv.ParseFloat(words[1], 64)
 			if err != nil {
 				fmt.Printf("%s is not a float", words[1])
 				continue
