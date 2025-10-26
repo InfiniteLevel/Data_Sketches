@@ -69,7 +69,7 @@ func convertProtoASToAS[T shared.Number](protoData *pb.ASketch) *asketch.ASketch
 // Merge the incoming ASketch into the server's ASketch state
 func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply, error) {
 	fld := ""
-	fmt.Printf("[SERVER] MergeASketch type=%s filter=%d rows=%d\n", in.GetType(), len(in.GetFilter()), len(in.GetCountMin().GetRows()))
+	//fmt.Printf("[SERVER] MergeASketch type=%s filter=%d rows=%d\n", in.GetType(), len(in.GetFilter()), len(in.GetCountMin().GetRows()))
 	switch in.Type {
 	case "int":
 		asketchState := getOrCreateASketchState[int](fld)
@@ -84,13 +84,13 @@ func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply
 		asketchState.MergeSketch(sketch)
 		asketchMutex.Unlock()
 
-		if len(in.GetFilter()) > 0 {
-			switch v := in.GetFilter()[0].GetItem().GetValue().(type) {
-			case *pb.NumericValue_FloatVal:
-				got := asketchState.Query(v.FloatVal)
-				fmt.Printf("[SERVER][POST-MERGE] value=%.10g -> %d  sketch=%p\n", v.FloatVal, got, asketchState)
-			}
-		}
+		// if len(in.GetFilter()) > 0 {
+		// 	switch v := in.GetFilter()[0].GetItem().GetValue().(type) {
+		// 	case *pb.NumericValue_FloatVal:
+		// 		got := asketchState.Query(v.FloatVal)
+		// 		fmt.Printf("[SERVER][POST-MERGE] value=%.10g -> %d  sketch=%p\n", v.FloatVal, got, asketchState)
+		// 	}
+		// }
 
 	default:
 		return nil, fmt.Errorf("%s is not supported, please submit a valid type", in.GetType())
@@ -105,13 +105,13 @@ func (s *Server) QueryASketch(_ context.Context, in *pb.NumericValue) (*pb.Count
 	case *pb.NumericValue_IntVal:
 		asketchState := getOrCreateASketchState[int]("")
 		ret := asketchState.Query(int(v.IntVal))
-		fmt.Printf("[SERVER][QUERY] type=int v=%d -> %d sketch=%p\n", v.IntVal, ret, asketchState)
+		//fmt.Printf("[SERVER][QUERY] type=int v=%d -> %d sketch=%p\n", v.IntVal, ret, asketchState)
 		return &pb.CountQueryReply{Res: int64(ret)}, nil
 
 	case *pb.NumericValue_FloatVal:
 		asketchState := getOrCreateASketchState[float64]("")
 		ret := asketchState.Query(v.FloatVal)
-		fmt.Printf("[SERVER][QUERY] type=float64 v=%.10g -> %d sketch=%p\n", v.FloatVal, ret, asketchState)
+		//fmt.Printf("[SERVER][QUERY] type=float64 v=%.10g -> %d sketch=%p\n", v.FloatVal, ret, asketchState)
 		return &pb.CountQueryReply{Res: int64(ret)}, nil
 
 	default:
