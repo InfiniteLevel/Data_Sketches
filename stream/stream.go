@@ -78,7 +78,7 @@ func NewStreamFromCsv[T shared.Number](csvPath string, field string, delayNano i
 		var ok bool
 
 		switch any(*new(T)).(type) {
-		case int64:
+		case int:
 			// parse int first, or float second
 			if iv, err := strconv.ParseInt(data, 10, 64); err == nil {
 				parsed, ok = T(iv), true

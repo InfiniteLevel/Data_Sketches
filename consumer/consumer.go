@@ -218,6 +218,42 @@ func Init(port string, adr string) {
 				}
 				fmt.Printf("Frequency of %d: %d\n", x, res.Res)
 			}
+		case "TopKASketch":
+			if len(words) < 3 {
+				fmt.Println("TopKASketch requires an int and a type")
+				continue
+			}
+			k, err := strconv.Atoi(words[1])
+			if err != nil {
+				fmt.Printf("%s is not an int", words[1])
+				continue
+			}
+			var res *pb.TopKReply
+			if words[2] == "float" {
+				res, err = c.TopKASketch(ctx, &pb.TopKRequest{K: uint32(k), Type: "float64"})
+				if err != nil {
+					fmt.Println("Could not fetch: ", err)
+					continue
+				}
+			} else if words[2] == "int" {
+				res, err = c.TopKASketch(ctx, &pb.TopKRequest{K: uint32(k), Type: "int"})
+				if err != nil {
+					fmt.Println("Could not fetch: ", err)
+					continue
+				}
+			} else {
+				fmt.Printf("%s is not a valid type", words[2])
+				continue
+			}
+			fmt.Println("Top", k, "entries in ASketch:")
+			for _, entry := range res.Entries {
+				switch v := entry.Key.GetValue().(type) {
+				case *pb.NumericValue_IntVal:
+					fmt.Printf("Value: %d, Estimated Frequency: %d\n", v.IntVal, entry.EstFreq)
+				case *pb.NumericValue_FloatVal:
+					fmt.Printf("Value: %.2f, Estimated Frequency: %d\n", v.FloatVal, entry.EstFreq)
+				}
+			}
 		case "help":
 			fmt.Println("The valid types are [int, float]\n")
 

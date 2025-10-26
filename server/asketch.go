@@ -75,13 +75,13 @@ func (s *Server) MergeASketch(_ context.Context, in *pb.ASketch) (*pb.MergeReply
 		asketchState := getOrCreateASketchState[int](fld)
 		sketch := convertProtoASToAS[int](in)
 		asketchMutex.Lock()
-		asketchState.Merge(sketch)
+		asketchState.MergeSketch(sketch)
 		asketchMutex.Unlock()
 	case "float64":
 		asketchState := getOrCreateASketchState[float64](fld)
 		sketch := convertProtoASToAS[float64](in)
 		asketchMutex.Lock()
-		asketchState.Merge(sketch)
+		asketchState.MergeSketch(sketch)
 		asketchMutex.Unlock()
 
 		if len(in.GetFilter()) > 0 {
