@@ -33,13 +33,13 @@ func convertProtoBufToBuf[T shared.Number](protoData *pb.BufBatch) []T {
 func (s *Server) MergeBufIntoASketch(_ context.Context, in *pb.BufBatch) (*pb.MergeReply, error) {
 	switch in.Type {
 	case "int":
-		asketchState := getOrCreateASketchState[int]()
+		asketchState := getOrCreateASketchState[int]("")
 		buf := convertProtoBufToBuf[int](in)
 		asketchMutex.Lock()
 		asketchState.MergeBuf(buf)
 		asketchMutex.Unlock()
 	case "float64":
-		asketchState := getOrCreateASketchState[float64]()
+		asketchState := getOrCreateASketchState[float64]("")
 		buf := convertProtoBufToBuf[float64](in)
 		asketchMutex.Lock()
 		asketchState.MergeBuf(buf)
