@@ -108,7 +108,8 @@ func main() {
 	field := flag.String("field", "", "event/signal name for which to compute Top-K")
 	k := flag.Uint("topk", 10, "K for Top-K")
 	csvPath := flag.String("out", "test.csv", "path to output CSV file")
-	watch := flag.Duration("watch", 0, "repeat every duration (e.g. 2s, 1m); 0 disables")
+	watch := flag.Duration("watch", 50*time.Millisecond, "repeat every duration (e.g. 2s, 1m); 0 disables")
+	timeout := flag.Duration("timeout", 2*time.Minute, "maximum runtime before stopping")
 	flag.Parse()
 
 	if *field == "" {
@@ -129,10 +130,19 @@ func main() {
 		first := true
 		t := time.NewTicker(*watch)
 		defer t.Stop()
+		timeoutCh := time.After(*timeout)
+
 		for {
 			do(first)
 			first = false
-			<-t.C
+
+			select {
+			case <-timeoutCh:
+				log.Println("Timeout reached — stopping CSV writes.")
+				return
+			case <-t.C:
+				// continue next iteration
+			}
 		}
 	} else {
 		do(true)
