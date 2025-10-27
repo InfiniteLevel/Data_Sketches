@@ -25,7 +25,7 @@ func StreamClient[T shared.Number](batchsize int, dataStream stream.Stream[T], a
 		i++
 
 		if i%batchsize == 0 {
-			fmt.Print("Buffer full, initiating send\n")
+			//fmt.Print("Buffer full, initiating send\n")
 			protoBuf := ConvertToProtoBuf(buf)
 
 			MakeRequest(protoBuf, addr, c.MergeBufIntoASketch, conn, &c, startConnection, reconAttempt)
@@ -48,7 +48,7 @@ func GetProtoBuf[T shared.Number](batchsize int, dataStream stream.Stream[T]) *p
 		i++
 
 		if i%batchsize == 0 {
-			fmt.Print("Buffer full, initiating send\n")
+			//fmt.Print("Buffer full, initiating send\n")
 			return ConvertToProtoBuf(buf)
 		}
 	}

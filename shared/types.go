@@ -10,8 +10,8 @@ type Number interface {
 const (
 	ASketchSeed  int64  = 157
 	ASketchWidth uint64 = 512
-	ASketchDepth int    = 4
-	ASketchSlots int    = 16
+	ASketchDepth int    = 12
+	ASketchSlots int    = 32
 )
 
 // Primitive buf constants

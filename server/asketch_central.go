@@ -31,7 +31,7 @@ func convertProtoBufToBuf[T shared.Number](protoData *pb.BufBatch) []T {
 
 // Merge the incoming Buf into the server's ASketch state
 func (s *Server) MergeBufIntoASketch(_ context.Context, in *pb.BufBatch) (*pb.MergeReply, error) {
-	fmt.Printf("[SERVER] MergeASketch type=%s bufSize=%d\n", in.GetType(), len(in.Items))
+	//fmt.Printf("[SERVER] MergeASketch type=%s bufSize=%d\n", in.GetType(), len(in.Items))
 	switch in.Type {
 	case "int":
 		asketchState := getOrCreateASketchState[int]("")
