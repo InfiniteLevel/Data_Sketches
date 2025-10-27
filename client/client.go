@@ -16,7 +16,7 @@ import (
 var MAX_RECONN_ATTEMPTS int = 20
 
 func Init[T shared.Number](port string, adr string, sketchType string, dataSetPath string, headerName string, numStreamRuns int, streamDelayms int, mergeAfter int) {
-	fmt.Printf("[debug] T = %T\n", *new(T))
+	//fmt.Printf("[debug] T = %T\n", *new(T))
 	dataStream := *stream.NewStreamFromCsv[T](dataSetPath, headerName, streamDelayms, numStreamRuns)
 
 	switch sketchType {
@@ -106,5 +106,5 @@ func MakeRequest[T any](protoSketch *T, addr string, merge mergeFunction[T], con
 
 	}
 	*attempt = 0
-	fmt.Printf("Successfully sent sketch to server at %s\n", addr)
+	//fmt.Printf("Successfully sent sketch to server at %s\n", addr)
 }
